@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <title>Unexpected Choices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a id="top"></a>
+
+    <div id="workPopup">
+      <article>
+        <h2></h2>
+        <a class="caratLink"></a>
+      </article>
+    </div>
+    <div id="loaderCover">
+      <div id="loaderBlock"></div>
+    </div>
+    <nav>
+      <a href="#preview"></a>
+      <a href="#visit"></a>
+      <a href="#behind"></a>
+    </nav>
+
+    <header>
+      <div id="headerVideo">
+        <video loop>
+          <source src="./src/assets/reviewFinalVideo_2.mp4" />
+        </video>
+        <img
+          src="./src/assets/desktopWorkmark.svg"
+          alt=""
+          id="desktopWordMark"
+        />
+        <img
+          id="wordMark"
+          src="./src/assets/wordmark.svg"
+          alt="Unexpected Choices Logo"
+        />
+        <div id="headerTagline">
+          Achieving Business Goals Through Graphic Design
+        </div>
+      </div>
+    </header>
+    <div id="quoteHeader">
+      <blockquote>
+        <span class="quoteLine"></span>
+        <span>
+          April 11 – May 7, 2022<br />Ferris State University<br />
+          Fine Art Gallery
+        </span>
+        <span class="quoteLine"></span>
+      </blockquote>
+      <p>
+        Right here in West Michigan, businesses trusted graphic designers to
+        make new or complex products and ideas clear and engaging. Designers
+        delivered fresh, distinctive, and innovative communications that
+        informed and often amused. The Ferris State University Design Project
+        Center has collaborated with the West Michigan Graphic Design Archives
+        to produce this exhibit. Be inspired and delighted!
+      </p>
+    </div>
+    <a href="#top" id="toTopButton">back to top</a>
+
+    <a href="#top" id="toTopButtonMobile">
+      <img src="./src/assets/caratIcon.svg" alt="" />
+    </a>
+
+    <!-- Autocam -->
+    <div id="companyContainer">
+      <section id="autocam" class="companySection">
+        <div class="col" id="titleAutocam">
+          <h1 class="ylw">autocam</h1>
+        </div>
+        <div class="workImageContainer col" id="apple">
+          <img src="./src/assets/work/autocam/report1994.png" />
+        </div>
+        <div class="workImageContainer col" id="notebook">
+          <img src="./src/assets/work/autocam/report1992.png" />
+        </div>
+        <div class="col" id="quoteAutocam">
+          <blockquote>
+            <span class="quoteLine"></span>
+            <span>
+              Autocam Corporation manufactures high-precision automotive fuel
+              injection and brake parts, as well as computer components and
+              medical devices, at its home base near Grand Rapids, MI.
+            </span>
+            <span class="quoteLine"></span>
+          </blockquote>
+        </div>
+        <div class="workImageContainer col" id="dark">
+          <img src="./src/assets/work/autocam/report1993.png" />
+        </div>
+        <div class="workImageContainer col" id="drawing">
+          <img src="./src/assets/work/autocam/report1996.png" />
+        </div>
+        <a id="preview" class="scrollLink"></a>
+      </section>
+
+      <!-- French Paper -->
+      <section id="french" class="companySection">
+        <div class="workImageContainer col" id="queen">
+          <img src="./src/assets/work/french/queenFrench.png" />
+        </div>
+        <div class="companyHeadingContainer col" id="headingFrench">
+          <div>
+            <blockquote>
+              <span class="quoteLine"></span>
+              <span>
+                French Paper Company is a family-owned American paper mill based
+                in Niles, MI, producing premium specialty paper since 1871.
+              </span>
+              <span class="quoteLine"></span>
+            </blockquote>
+          </div>
+          <div>
+            <h1 class="ylw">french</h1>
+            <br />
+            <h1>paper</h1>
+          </div>
+        </div>
+        <div class="workImageContainer col" id="scatter">
+          <img src="./src/assets/work/french/scatterFrench80.png" />
+        </div>
+        <div class="workImageContainer col" id="beaver">
+          <img src="./src/assets/work/french/beaverFrenchCrop77.png" />
+        </div>
+        <div class="workImageContainer col" id="jerry">
+          <img src="./src/assets/work/french/frenchJerryCrop.png" />
+        </div>
+      </section>
+
+      <!-- Herman Miller -->
+      <section id="herman" class="companySection">
+        <div class="companyHeadingContainer col" id="titleHerman">
+          <div>
+            <h1>herman</h1>
+            <h1 class="ylw">miller</h1>
+          </div>
+        </div>
+        <div class="workImageContainer col" id="celery">
+          <img src="./src/assets/work/herman/celery.png" />
+        </div>
+        <div class="workImageContainer col" id="corn">
+          <img src="./src/assets/work/herman/corn.png" />
+        </div>
+        <div class="col" id="quoteHerman">
+          <div>
+            <blockquote>
+              <span class="quoteLine"></span>
+              <span>
+                Herman Miller is a Zeeland, MI based company that has placed a
+                great importance on design for over 100 years.
+              </span>
+              <span class="quoteLine"></span>
+            </blockquote>
+          </div>
+        </div>
+        <div class="workImageContainer col" id="sofa">
+          <img src="./src/assets/work/herman/sofa.png" />
+        </div>
+        <div class="workImageContainer col" id="thankyou">
+          <img src="./src/assets/work/herman/thankYouHermanMiller.png" />
+        </div>
+      </section>
+
+      <!-- Opera -->
+      <section id="opera" class="companySection">
+        <div class="workImageContainer" id="yellow">
+          <img src="./src/assets/work/opera/yellowOperaCrop4867.png" />
+        </div>
+        <div class="companyHeadingContainer" id="headingOpera">
+          <div>
+            <h1>rapids</h1>
+            <h1>grand</h1>
+            <h1 class="ylw">opera</h1>
+          </div>
+        </div>
+        <blockquote id="quoteOpera">
+          <span class="quoteLine"></span>
+          <span>
+            Puccini. Stravinsky. Mozart. Each season of Opera Grand Rapids
+            inspires dramatic storytelling images to attract new audience
+            members and excite opera enthusiasts.</span
+          >
+          <span class="quoteLine"></span>
+        </blockquote>
+        <div class="workImageContainer" id="black">
+          <img src="./src/assets/work/opera/pagliacci.png" />
+        </div>
+
+        <div class="workImageContainer" id="blue">
+          <img src="./src/assets/work/opera/blueOperaCrop5114.png" />
+        </div>
+        <div class="workImageContainer" id="orange">
+          <img src="./src/assets/work/opera/orangeOperaCrop5112.png" />
+        </div>
+      </section>
+
+      <!-- Upjohn -->
+      <section id="upjohn" class="companySection">
+        <div class="companyHeadingContainer" id="titleUpjohn">
+          <div>
+            <h1>the</h1>
+            <h1 class="ylw">upjohn</h1>
+            <h1>company</h1>
+          </div>
+        </div>
+
+        <div class="col" id="quoteUpjohn">
+          <div>
+            <blockquote>
+              <span class="quoteLine"></span>
+              <span>
+                This pharmaceutical company’s investment in designers led to
+                significant advancement of informational design.
+              </span>
+              <span class="quoteLine"></span>
+            </blockquote>
+          </div>
+        </div>
+        <div class="workImageContainer col" id="yellowSwoosh">
+          <img src="./src/assets/work/upjohn/scopeIII-11.png" />
+        </div>
+        <div class="workImageContainer col" id="eggs">
+          <img src="./src/assets/work/upjohn/packagesLife.png" />
+        </div>
+        <div class="workImageContainer col" id="brain">
+          <img src="./src/assets/work/upjohn/scopeIV-8.png" />
+        </div>
+        <div class="workImageContainer col" id="dude">
+          <img src="./src/assets/work/upjohn/scope-10.png" />
+        </div>
+      </section>
+    </div>
+
+    <section id="visitSectionContainer">
+      <div>
+        <a id="visit" class="scrollLink"></a>
+        <div id="visitInfo">
+          <div id="visitHeading">
+            <h1 class="ylw">visit</h1>
+          </div>
+          <div id="galleryName">
+            <blockquote>
+              <span class="quoteLine"></span>
+              <span>Ferris State University <br />Fine Art Gallery</span>
+              <span class="quoteLine"></span>
+            </blockquote>
+            <p>805 Campus Drive<br />Big Rapids, MI 49307</p>
+          </div>
+          <div id="galleryMap"></div>
+          <div id="galleryHours">
+            <h2>Gallery Hours</h2>
+            <ul>
+              <li><em>monday </em>9a–11a & 12p–6p</li>
+              <li><em>tuesday </em>11a–1:30p & 2p–6p</li>
+              <li><em>wednesday </em>9a–6p</li>
+              <li><em>thursday </em>1p–6p</li>
+              <li><em>friday </em>9a–5p</li>
+              <li><em>saturday </em>10a–2p</li>
+            </ul>
+          </div>
+          <div id="galleryParking">
+            <h2>Parking Permits</h2>
+            <p>
+              Campus visitors must obtain a free, guest parking permit when
+              parking in campus lots.
+            </p>
+            <a
+              href="https://www.ferris.edu/HTMLS/othersrv/campussafety/Parking_Services_Section/Guest_Permits.htm"
+              class="caratLink"
+              target="_blank"
+              >Get Parking Permit</a
+            >
+          </div>
+        </div>
+        <section id="behindExhibit">
+          <a id="behind" class="scrollLink"></a>
+          <div id="archivesAbout">
+            <div>
+              <img
+                src="./src/assets/wmgdaLogo.svg"
+                alt="West Michigan Graphic Design Archives logo"
+              />
+              <p>
+                This exhibit was made possible by a collaboration between the
+                Ferris State University Design Project Center and the West
+                Michigan Graphic Design Archives, housed at the Zhang Legacy
+                Collections Center at Western Michigan University. The Archives
+                makes both digital representations and physical artifacts
+                available to design professionals, educators, students, business
+                people, researchers, and others interested in the rich legacy of
+                graphic design, paper manufacturing, and printing in West
+                Michigan.
+              </p>
+              <a
+                href="https://graphicdesignarchives.org/"
+                class="caratLink"
+                target="_blank"
+                >Visit the Archives</a
+              >
+            </div>
+          </div>
+          <div id="behindExhibitHeadingContainer">
+            <h1>
+              <em>behind the</em>
+            </h1>
+            <h1>exhibit</h1>
+          </div>
+          <div id="ferrisAbout">
+            <div>
+              <img
+                src="./src/assets/studentsInGallery.jpg"
+                alt="students standing in gallery"
+              />
+              <p>
+                This exhibit was curated and designed by senior Ferris State
+                University students: Mallory Jarrett, Mckinley Kreitner, Nathan
+                Nye, Olivia Smith, and Ngan Tang, under the leadership of Design
+                Program faculty members Alison Popp and Nicolas Mata.
+              </p>
+              <img
+                src="./src/assets/studentsDiagramming.jpg"
+                alt="students diagramming"
+              />
+              <p>
+                Through this experience, the students learned about the ways
+                design is important to business and how memorable and exciting
+                it can be. The students are part of the Design Program in the
+                College of Business.
+              </p>
+              <a
+                href="https://graphicdesign.ferris.edu/"
+                target="_blank"
+                class="caratLink"
+                >Visit the Ferris Design Program</a
+              >
+            </div>
+          </div>
+          <div id="brightformatAbout">
+            <p>
+              Brightformat, a Grand Rapids high-quality digital printing
+              company, contributed expertise, services, and materials that made
+              this exhibit possible. Their commitment to the West Michigan
+              design community is evident through their support, demonstrating
+              their belief that there is nothing more important than the success
+              of their clients.
+            </p>
+            <a href="https://brightformat.com/" target="_blank"
+              ><img src="./src/assets/brightformat.svg" alt="Brightformat logo"
+            /></a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+      <img
+        src="./src/assets/ferrisLogo.svg"
+        alt="Ferris State University logo"
+      />
+      <p>
+        Design and development by
+        <a href="http://freshmindsthinkdesign.com/" target="_blank"
+          >Design Project Center Ferris State University</a>
+        <br />©2022
+        <a href="graphicdesignarchives.org/" target="_blank"
+          >West Michigan Graphic Design Archives </a
+        >and copyright owners for included works. Visitors to this site agree to
+        comply with copyright and fair use standards for text and media on this
+        site.
+      </p>
+    </footer>
+    <script src="./src/js/gsap.min.js"></script>
+    <script src="./src/js/SplitText.min.js"></script>
+    <script src="./src/js/ScrollTrigger.min.js"></script>
+    <script src="./src/js/map.js"></script>
+    <script src="./src/js/colors.js"></script>
+    <script type="module" src="./src/js/index.js"></script>
+  </body>
+</html>
