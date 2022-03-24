@@ -1,21 +1,19 @@
-// import { gsap } from "gsap/all";
-// import work from "./js/work";
-// import colors from "./js/colors";
-// import scrollTrigger from "gsap/ScrollTrigger";
-// import SplitText from "gsap/SplitText";
-// import * as smoothscroll from "smoothscroll-polyfill";
-import colors from "./colors";
-
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
+const colors = {
+  ylw: "#FABC13",
+  black: "#211E1F",
+  lgry: "#e6e7e8",
+  mgrey: "#939598",
+  white: "#fff",
+};
 
 let imageContainers = gsap.utils.toArray(".workImageContainer");
 let newContainer = document.getElementById("workPopup");
 
 document.addEventListener("DOMContentLoaded", (event) => {
   imageContainers.forEach((e) => {
-    // let img = e.querySelector("img");
-
+    
     gsap.set(e, {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     });
