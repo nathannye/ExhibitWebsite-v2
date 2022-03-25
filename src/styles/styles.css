@@ -12,8 +12,15 @@ html {
   --power3: 0.24s cubic-bezier(0.84, 0, 0.15, 1) all;
   --linear: 0.2s ease-in-out all;
   --unit: 12.5%;
+  --widthOne: calc(var(--unit) * 1);
+  --widthTwo: calc(var(--unit) * 2);
+  --widthThree: calc(var(--unit) * 3);
+  --widthFour: calc(var(--unit) * 4);
+  --widthFive: calc(var(--unit) * 5);
+  --widthSix: calc(var(--unit) * 6);
+  --widthSeven: calc(var(--unit) * 7);
+  --widthEight: calc(var(--unit) * 8);
   --gutter: 3rem;
-  /* --widthOne: calc(12.5% ); */
   font-family: "Lato", Tahoma, sans-serif;
   font-size: 87.5%;
   font-kerning: normal;
@@ -131,6 +138,10 @@ nav > a {
   line-height: 1.4;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+img {
+  object-fit: cover;
 }
 
 nav > a {
@@ -313,40 +324,35 @@ a.caratLink::after {
 }
 
 blockquote {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
-  letter-spacing: 0.054em;
   width: 100%;
-  color: var(--darkgry);
-  text-transform: uppercase;
-  font-weight: 900;
+  color: white;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-blockquote .quoteLine {
-  width: 50%;
-  background: var(--ylw);
-  height: 1.5px;
-}
-
-blockquote .quoteLine:first-child {
-  margin-bottom: 0.45rem;
-}
-
-blockquote .quoteLine:last-child {
-  margin-top: 0.45rem;
+#upjohn,
+#herman,
+#autocam,
+#french {
+  display: none;
 }
 
 #companyContainer {
-  width: 91%;
-  max-width: 1850px;
+  /* width: 91%; */
+  /* max-width: 1850px; */
   margin: auto;
 }
 
 #companyContainer .companySection:not(#upjohn) h1:not(.ylw) {
   color: var(--lightgry);
+}
+
+.companySection {
+  margin: 10% 0;
 }
 
 .workImageContainer {
@@ -358,9 +364,38 @@ blockquote .quoteLine:last-child {
   height: auto;
 }
 
-#opera
+#opera {
+  display: flex;
+  flex-direction: row;
+}
 
+#opera .col {
+  display: flex;
+  flex-direction: column;
+  margin-right: var(--gutter);
+}
 
+#opera .col img,
+#quoteOpera,
+#headingOpera {
+  margin-bottom: var(--gutter);
+}
+
+#opera .col:first-child {
+  width: var(--widthThree);
+}
+
+#opera .col:nth-child(2) {
+  width: var(--widthTwo);
+}
+
+#opera .col:last-child {
+  width: var(--widthThree);
+}
+
+#quoteOpera {
+  width: var(--widthTwo);
+}
 
 #visitSectionContainer {
   margin: auto;
