@@ -13,7 +13,6 @@ let newContainer = document.getElementById("workPopup");
 
 document.addEventListener("DOMContentLoaded", (event) => {
   imageContainers.forEach((e) => {
-    
     gsap.set(e, {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     });
