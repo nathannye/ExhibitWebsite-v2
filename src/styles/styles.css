@@ -12,15 +12,16 @@ html {
   --power3: 0.24s cubic-bezier(0.84, 0, 0.15, 1) all;
   --linear: 0.2s ease-in-out all;
   --unit: 12.5%;
-  --widthOne: calc(var(--unit) * 1);
-  --widthTwo: calc(var(--unit) * 2);
-  --widthThree: calc(var(--unit) * 3);
-  --widthFour: calc(var(--unit) * 4);
-  --widthFive: calc(var(--unit) * 5);
+  --gutter: clamp(1rem, calc(1rem + ((1vw - 0.285rem) * 2.7972)), 3rem);
+  --widthOne: calc((var(--unit) * 1) - var(--gutter));
+  --widthTwo: calc((var(--unit) * 2) - var(--gutter));
+  --widthThree: calc((var(--unit) * 3) - var(--gutter));
+  --widthFour: calc((var(--unit) * 4) - var(--gutter));
+  --widthFive: calc((var(--unit) * 5) - var(--gutter));
   --widthSix: calc(var(--unit) * 6);
   --widthSeven: calc(var(--unit) * 7);
   --widthEight: calc(var(--unit) * 8);
-  --gutter: 3rem;
+
   font-family: "Lato", Tahoma, sans-serif;
   font-size: 87.5%;
   font-kerning: normal;
@@ -335,16 +336,13 @@ blockquote {
 }
 
 #upjohn,
-#herman,
 #autocam,
 #french {
   display: none;
 }
 
 #companyContainer {
-  /* width: 91%; */
-  /* max-width: 1850px; */
-  margin: auto;
+  margin-bottom: 12rem;
 }
 
 #companyContainer .companySection:not(#upjohn) h1:not(.ylw) {
@@ -366,12 +364,22 @@ blockquote {
 
 #opera {
   display: flex;
-  flex-direction: row;
+  height: 50vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#opera h1 {
+  text-align: right;
 }
 
 #opera .col {
   display: flex;
   flex-direction: column;
+  /* margin-right: var(--gutter); */
+}
+
+#opera .col:not(:last-child) {
   margin-right: var(--gutter);
 }
 
@@ -383,18 +391,59 @@ blockquote {
 
 #opera .col:first-child {
   width: var(--widthThree);
+  height: 100%;
 }
 
 #opera .col:nth-child(2) {
-  width: var(--widthTwo);
+  width: 50%;
+  height: 68px;
+  flex-direction: row;
+}
+
+#opera .col:nth-child(2) img {
+  width: 50%;
+}
+
+#blue {
+  margin-bottom: 0 !important;
 }
 
 #opera .col:last-child {
-  width: var(--widthThree);
+  width: 50%;
+  height: 40%;
+  position: relative;
 }
 
 #quoteOpera {
-  width: var(--widthTwo);
+  /* width: var(--widthTwo); */
+  width: 100%;
+  position: absolute;
+  width: 100%;
+  bottom: calc(-80% - var(--gutter));
+  left: 0;
+}
+
+/* Herman Mobile Styles */
+
+#herman {
+  flex-direction: row;
+}
+
+#herman .col {
+  display: flex;
+  flex-direction: column;
+}
+
+#herman .col:first-child {
+  width: 50%;
+}
+
+#herman .col:nth-child(2) {
+  width: 50%;
+}
+
+#herman .col:last-child {
+  width: 100%;
 }
 
 #visitSectionContainer {
@@ -644,9 +693,57 @@ blockquote {
     max-width: 460px;
     top: -3.5%;
   }
+
   .col {
     width: unset;
   }
+  /* Opera Styles */
+  #opera {
+    height: 100vh;
+    flex-direction: row;
+  }
+
+  #opera .col {
+    height: unset !important;
+    flex-grow: 1;
+  }
+
+  #opera .col:first-child {
+    width: var(--widthTwo);
+  }
+
+  #opera .col:nth-child(2) {
+    width: var(--widthTwo);
+    flex-direction: column;
+    height: 80% !important;
+  }
+
+  #opera .col:nth-child(2) img {
+    width: 100%;
+    height: auto;
+  }
+
+  #quoteOpera {
+    width: var(--widthTwo);
+  }
+
+  #blue {
+    margin-bottom: var(--gutter);
+    height: 40%;
+  }
+
+  #opera .col:last-child {
+    width: var(--widthThree);
+  }
+
+  #quoteOpera {
+    position: relative;
+    bottom: unset;
+    margin-top: var(--gutter);
+    width: var(--widthThree);
+    left: unset;
+  }
+
   #behindExhibit {
     display: flex;
     flex-wrap: wrap;

@@ -39,31 +39,31 @@ document.addEventListener("DOMContentLoaded", (event) => {
     );
   });
 
-  let startWhite = document.getElementById("visitSectionContainer");
-  let html = document.querySelector("html");
-  let navLinks = document.querySelectorAll("nav > a");
+  // let startWhite = document.getElementById("visitSectionContainer");
+  // let html = document.querySelector("html");
+  // let navLinks = document.querySelectorAll("nav > a");
 
-  gsap.to(html, {
-    scrollTrigger: {
-      start: "top bottom+=38%",
-      end: "top bottom-=4%",
-      scrub: 0.25,
-      duration: 20,
-      trigger: startWhite,
-    },
-    background: "#f9f9f9",
-  });
+  // gsap.to(html, {
+  //   scrollTrigger: {
+  //     start: "top bottom+=38%",
+  //     end: "top bottom-=4%",
+  //     scrub: 0.25,
+  //     duration: 20,
+  //     trigger: startWhite,
+  //   },
+  //   background: "#f9f9f9",
+  // });
 
-  gsap.to(navLinks, {
-    scrollTrigger: {
-      start: "top bottom",
-      end: "top bottom-=28%",
-      scrub: 0.25,
-      duration: 20,
-      trigger: startWhite,
-    },
-    color: "#211E1F",
-  });
+  // gsap.to(navLinks, {
+  //   scrollTrigger: {
+  //     start: "top bottom",
+  //     end: "top bottom-=28%",
+  //     scrub: 0.25,
+  //     duration: 20,
+  //     trigger: startWhite,
+  //   },
+  //   color: "#211E1F",
+  // });
 
   let headerQuote = document.querySelectorAll("#quoteHeader > *");
   let tagline = document.getElementById("headerTagline");
