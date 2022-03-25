@@ -336,7 +336,6 @@ blockquote {
 }
 
 #upjohn,
-#autocam,
 #french {
   display: none;
 }
@@ -360,6 +359,34 @@ blockquote {
 .workImageContainer img {
   width: 100%;
   height: auto;
+}
+
+#autocam {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#autocam .col {
+  display: flex;
+  flex-direction: column;
+}
+
+#autocam .col:first-child {
+  width: 50%;
+}
+
+#autocam .col:nth-child(2) {
+  width: 50%;
+}
+
+#titleAutocam {
+  margin-bottom: var(--gutter);
+}
+
+#autocam .col:nth-child(3) {
+  width: 75%;
+  margin-left: auto;
 }
 
 #opera {
@@ -715,6 +742,28 @@ blockquote {
   .col {
     width: unset;
   }
+
+  /* Autocam Desktop Styles */
+
+  #autocam .col {
+    flex-grow: 1;
+  }
+
+  #autocam .col:nth-child(1) {
+    width: var(--widthTwo);
+    margin-right: var(--gutter);
+  }
+
+  #autocam .col:nth-child(2) {
+    width: var(--widthTwo);
+    margin-right: var(--gutter);
+  }
+
+  #autocam .col:nth-child(3) {
+    width: var(--widthThree);
+    margin: 0;
+  }
+
   /* Opera Desktop Styles */
   #opera {
     height: 100vh;

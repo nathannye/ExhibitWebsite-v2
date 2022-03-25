@@ -3,7 +3,7 @@
     "vite": "^2.8.6"
   },
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "vite build"
   }
 }
