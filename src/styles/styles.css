@@ -5,14 +5,16 @@
 }
 
 html {
-  --deepBlack: #211E1F;
-  --ylw: #FABC13;
-  --lightgry: #E6E7E8;
+  --deepBlack: #211e1f;
+  --ylw: #fabc13;
+  --lightgry: #e6e7e8;
   --darkgry: #939598;
   --power3: 0.24s cubic-bezier(0.84, 0, 0.15, 1) all;
-  --linear: .2s ease-in-out all;
-  --unit: 
-  font-family: 'Lato', Tahoma, sans-serif;
+  --linear: 0.2s ease-in-out all;
+  --unit: 12.5%;
+  --gutter: 3rem;
+  --widthOne: ;
+  font-family: "Lato", Tahoma, sans-serif;
   font-size: 87.5%;
   font-kerning: normal;
   margin-top: 5rem;
@@ -38,7 +40,8 @@ h1 div {
   transform-style: preserve-3d;
 }
 
-h1 em, h1.ylw {
+h1 em,
+h1.ylw {
   color: var(--ylw);
   font-style: normal;
 }
@@ -47,7 +50,7 @@ header {
   position: relative;
   padding-top: 6%;
   display: flex;
-  margin-right: calc(8.3% - .75rem);
+  margin-right: calc(8.3% - 0.75rem);
   align-items: flex-start;
   flex-wrap: wrap;
 }
@@ -96,7 +99,7 @@ header blockquote {
 }
 
 header #wordMark {
-  width: calc((8.3% * 11) - .75rem);
+  width: calc((8.3% * 11) - 0.75rem);
   position: absolute;
   z-index: 10;
   right: 4.5%;
@@ -116,12 +119,13 @@ h2 {
   font-size: 11px;
   line-height: 1.4;
   font-weight: 900;
-  letter-spacing: .015em;
+  letter-spacing: 0.015em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
 
-h3, nav > a {
+h3,
+nav > a {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.4;
@@ -136,7 +140,7 @@ nav > a {
 
 li {
   list-style-type: none;
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
 li em {
@@ -233,7 +237,7 @@ footer {
 }
 
 footer::before {
-  content: '';
+  content: "";
   background: var(--lightgry);
   height: 1.5px;
   width: 100%;
@@ -245,16 +249,16 @@ footer::before {
 footer img {
   width: 200px;
   margin-bottom: 1rem;
-  opacity: .46;
+  opacity: 0.46;
 }
 
 footer br {
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 footer p {
   width: 100%;
-  font-size: .85rem;
+  font-size: 0.85rem;
   max-width: 500px;
 }
 
@@ -293,11 +297,11 @@ a.caratLink {
   color: var(--ylw);
   font-weight: 700;
   position: relative;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 a.caratLink::after {
-  content: '';
+  content: "";
   background: url("./../assets/caratIcon.svg");
   height: 13px;
   width: 13px;
@@ -311,7 +315,7 @@ a.caratLink::after {
 blockquote {
   font-size: 12px;
   line-height: 1.4;
-  letter-spacing: .054em;
+  letter-spacing: 0.054em;
   width: 100%;
   color: var(--darkgry);
   text-transform: uppercase;
@@ -328,11 +332,11 @@ blockquote .quoteLine {
 }
 
 blockquote .quoteLine:first-child {
-  margin-bottom: .45rem;
+  margin-bottom: 0.45rem;
 }
 
 blockquote .quoteLine:last-child {
-  margin-top: .45rem;
+  margin-top: 0.45rem;
 }
 
 #companyContainer {
@@ -372,12 +376,12 @@ blockquote .quoteLine:last-child {
 
 #autocam .col#titleAutocam {
   width: 50%;
-  padding-right: .75rem;
+  padding-right: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
 #autocam .col#apple {
-  padding-left: .75rem;
+  padding-left: 0.75rem;
   width: 50%;
 }
 
@@ -390,7 +394,7 @@ blockquote .quoteLine:last-child {
   align-items: flex-start;
   height: 100% !important;
   align-self: stretch;
-  padding-right: .75rem;
+  padding-right: 0.75rem;
   width: 50%;
 }
 
@@ -399,7 +403,7 @@ blockquote .quoteLine:last-child {
   height: unset !important;
   flex-grow: 0.5;
   width: 50%;
-  padding-left: .75rem;
+  padding-left: 0.75rem;
 }
 
 #autocam #drawing {
@@ -430,7 +434,7 @@ blockquote .quoteLine:last-child {
 }
 
 #french .col:nth-child(2).companyHeadingContainer {
-  width: calc((8.3% * 6) - .75rem);
+  width: calc((8.3% * 6) - 0.75rem);
   flex-grow: 1;
   margin-left: 1.5rem;
   flex-direction: row-reverse;
@@ -450,7 +454,7 @@ blockquote .quoteLine:last-child {
   align-items: flex-start;
   width: 330px;
   width: 33%;
-  padding-right: .75rem;
+  padding-right: 0.75rem;
 }
 
 #french .col:nth-child(2).companyHeadingContainer h1 {
@@ -459,16 +463,16 @@ blockquote .quoteLine:last-child {
 }
 
 #french .col:nth-child(3) {
-  width: calc((8.3% * 6) - .75rem);
+  width: calc((8.3% * 6) - 0.75rem);
   order: 5;
-  padding-right: .75rem;
+  padding-right: 0.75rem;
 }
 
 #french .col#beaver {
   order: 4;
   width: 48%;
   height: 140px;
-  padding-left: .75rem;
+  padding-left: 0.75rem;
 }
 
 #french .col:last-child {
@@ -483,7 +487,7 @@ blockquote .quoteLine:last-child {
   height: 140px;
   width: 40%;
   flex-grow: 1;
-  padding-right: .75rem;
+  padding-right: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
@@ -512,33 +516,33 @@ blockquote .quoteLine:last-child {
 }
 
 #herman .col#quoteHerman {
-  padding-left: .75rem;
+  padding-left: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
 #herman .col#corn {
   height: 35%;
-  padding-right: .75rem;
+  padding-right: 0.75rem;
 }
 
 #herman .col#sofa {
   height: 35%;
-  padding-left: .75rem;
+  padding-left: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
 #herman .col#celery {
-  padding-right: .75rem;
+  padding-right: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
 #herman .col#thankyou {
   height: 30%;
-  padding-left: .75rem;
+  padding-left: 0.75rem;
 }
 
 #herman .col#titleHerman {
-  padding-right: .75rem;
+  padding-right: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
@@ -549,7 +553,7 @@ blockquote .quoteLine:last-child {
 }
 
 #opera #yellow {
-  width: calc((8.3% * 6) - .75rem);
+  width: calc((8.3% * 6) - 0.75rem);
   padding-right: 1rem;
 }
 
@@ -560,17 +564,17 @@ blockquote .quoteLine:last-child {
 }
 
 #opera #black {
-  width: calc((8.3% * 6) - .75rem);
+  width: calc((8.3% * 6) - 0.75rem);
   padding-right: 1rem;
 }
 
 #opera #blue {
-  width: calc((8.3% * 6) - .75rem);
+  width: calc((8.3% * 6) - 0.75rem);
   padding-left: 1rem;
 }
 
 #opera #orange {
-  width: calc((8.3% * 6) - .75rem);
+  width: calc((8.3% * 6) - 0.75rem);
   margin-top: 1.5rem;
   padding-right: 1rem;
 }
@@ -604,7 +608,7 @@ blockquote .quoteLine:last-child {
 }
 
 #upjohn #yellowSwoosh {
-  padding-right: .75rem;
+  padding-right: 0.75rem;
   width: 50%;
   margin-top: 1.5rem;
 }
@@ -622,7 +626,7 @@ blockquote .quoteLine:last-child {
   margin-top: 1.5rem;
   width: 50%;
   margin-bottom: 1.5rem;
-  padding-left: .75rem;
+  padding-left: 0.75rem;
 }
 
 #upjohn #brain {
@@ -631,7 +635,7 @@ blockquote .quoteLine:last-child {
 }
 
 #upjohn #dude {
-  margin-left: .75rem;
+  margin-left: 0.75rem;
 }
 
 #upjohn#quoteUpjohn {
@@ -674,7 +678,7 @@ blockquote .quoteLine:last-child {
 }
 
 #visitSectionContainer #visitInfo #galleryParking {
-  width: calc((8.3% * 9) - .75rem);
+  width: calc((8.3% * 9) - 0.75rem);
 }
 
 #visitSectionContainer #galleryMap {
@@ -697,7 +701,7 @@ blockquote .quoteLine:last-child {
 #behindExhibit #behindExhibitHeadingContainer {
   align-self: flex-start;
   flex-grow: 1;
-  width: calc((8.3% * 6) - .75rem);
+  width: calc((8.3% * 6) - 0.75rem);
   margin-top: 6rem;
   order: -1;
   display: flex;
@@ -717,7 +721,7 @@ blockquote .quoteLine:last-child {
 }
 
 #behindExhibit #brightformatAbout img:hover {
-  opacity: .5;
+  opacity: 0.5;
   transition: var(--linear);
 }
 
@@ -786,7 +790,8 @@ blockquote .quoteLine:last-child {
   overflow: hidden;
 }
 
-.mapboxgl-marker svg ellipse, .mapboxgl-marker svg circle {
+.mapboxgl-marker svg ellipse,
+.mapboxgl-marker svg circle {
   display: none;
 }
 
@@ -796,7 +801,9 @@ blockquote .quoteLine:last-child {
   margin: 0 1.5rem 1.5rem 0 !important;
 }
 
-.mapboxgl-ctrl .mapboxgl-ctrl-logo, .mapboxgl-ctrl .mapboxgl-ctrl-attrib-inner, .mapboxgl-ctrl .mapboxgl-ctrl-attrib.mapboxgl-compact {
+.mapboxgl-ctrl .mapboxgl-ctrl-logo,
+.mapboxgl-ctrl .mapboxgl-ctrl-attrib-inner,
+.mapboxgl-ctrl .mapboxgl-ctrl-attrib.mapboxgl-compact {
   display: none !important;
 }
 
@@ -805,7 +812,7 @@ blockquote .quoteLine:last-child {
 }
 
 .mapboxgl-ctrl .mapboxgl-ctrl-icon:hover {
-  opacity: .87;
+  opacity: 0.87;
 }
 
 .mapboxgl-ctrl .mapboxgl-ctrl-zoom-in {
@@ -831,7 +838,7 @@ blockquote .quoteLine:last-child {
 
 @media only screen and (min-width: 660px) {
   #quoteHeader {
-    width: calc((8.3% * 3) - .75rem);
+    width: calc((8.3% * 3) - 0.75rem);
     max-width: 360px;
     color: white;
   }
@@ -864,7 +871,7 @@ blockquote .quoteLine:last-child {
     top: unset;
   }
   header #headerTagline {
-    margin-left: calc(8.3% - .75rem);
+    margin-left: calc(8.3% - 0.75rem);
     bottom: -160px;
     right: -230px;
     left: unset;
@@ -872,7 +879,7 @@ blockquote .quoteLine:last-child {
     transform: translateY(50%);
   }
   header #headerVideo {
-    width: calc((8.3% * 10) - .75rem);
+    width: calc((8.3% * 10) - 0.75rem);
     position: absolute;
   }
   header #headerVideo {
@@ -901,7 +908,7 @@ blockquote .quoteLine:last-child {
     padding: 0 !important;
   }
   #autocam .col#titleAutocam {
-    width: calc((8.3% * 5) - .75rem);
+    width: calc((8.3% * 5) - 0.75rem);
     justify-content: flex-end;
     height: 50% !important;
     margin-right: 1.5rem;
@@ -911,14 +918,14 @@ blockquote .quoteLine:last-child {
   #autocam .col#apple {
     order: 3;
     flex-grow: 1;
-    width: calc((8.3% * 2) - .75rem);
-    margin-left: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
+    margin-left: calc((8.3% * 2) - 0.75rem);
     padding-left: 1.5rem;
     height: 50% !important;
     justify-content: flex-end;
   }
   #autocam .col#notebook {
-    width: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
     justify-content: flex-end;
     height: 50% !important;
   }
@@ -929,17 +936,17 @@ blockquote .quoteLine:last-child {
   #autocam .col#quoteAutocam {
     order: 5;
     margin-top: 1.5rem;
-    width: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
     flex-grow: unset;
     margin-top: 0 !important;
   }
   #autocam .col#dark {
-    width: calc((8.3% * 5) - .75rem);
+    width: calc((8.3% * 5) - 0.75rem);
     order: 4;
     margin-top: 0 !important;
   }
   #autocam .col#drawing {
-    width: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
     display: flex;
     margin-top: 0 !important;
     padding-right: 1.5rem !important;
@@ -965,7 +972,7 @@ blockquote .quoteLine:last-child {
   }
   #french .col#queen {
     justify-content: flex-end;
-    width: calc((8.3% * 3) - .75rem);
+    width: calc((8.3% * 3) - 0.75rem);
     height: 35%;
     order: 1;
   }
@@ -977,7 +984,7 @@ blockquote .quoteLine:last-child {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    width: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
     height: 100%;
     order: 4;
   }
@@ -999,7 +1006,7 @@ blockquote .quoteLine:last-child {
     transform: translateX(-0.8rem);
   }
   #french .col:nth-child(3) {
-    width: calc((8.3% * 3) - .75rem);
+    width: calc((8.3% * 3) - 0.75rem);
     order: 2;
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -1013,20 +1020,20 @@ blockquote .quoteLine:last-child {
   #french .col#beaver {
     order: 3;
     height: 100%;
-    width: calc((8.3% * 3) - .75rem);
+    width: calc((8.3% * 3) - 0.75rem);
   }
   #french .col#beaver img {
     height: 35%;
   }
   #french .col:last-child {
-    width: calc((8.3% * 3) - .75rem);
+    width: calc((8.3% * 3) - 0.75rem);
     order: 5;
     height: 50%;
     justify-content: flex-end;
   }
   #french #jerry {
     height: 50%;
-    width: calc((8.3% * 3) - .75rem);
+    width: calc((8.3% * 3) - 0.75rem);
     flex-grow: 1;
   }
   #french #jerry img {
@@ -1053,7 +1060,7 @@ blockquote .quoteLine:last-child {
     padding: 0 !important;
   }
   #herman .col#titleHerman {
-    width: calc((8.3% * 5) - .75rem);
+    width: calc((8.3% * 5) - 0.75rem);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1064,12 +1071,12 @@ blockquote .quoteLine:last-child {
     height: 50%;
   }
   #herman .col#celery {
-    width: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
     order: 1;
     height: 50%;
   }
   #herman .col#quoteHerman {
-    width: calc((8.3% * 3) - .75rem);
+    width: calc((8.3% * 3) - 0.75rem);
     order: 2;
     margin-top: 1.2rem;
     display: flex;
@@ -1079,22 +1086,22 @@ blockquote .quoteLine:last-child {
     justify-content: flex-end;
   }
   #herman .col#sofa {
-    width: calc(8.3% - .75rem);
+    width: calc(8.3% - 0.75rem);
     height: 50%;
     order: 3;
     flex-grow: 1;
   }
   #herman .col#thankyou {
-    width: calc((8.3% * 3) - .75rem);
-    margin-left: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 3) - 0.75rem);
+    margin-left: calc((8.3% * 2) - 0.75rem);
     order: 4;
     margin-top: 0;
   }
   #herman .col#corn {
-    width: calc((8.3% * 3) - .75rem);
+    width: calc((8.3% * 3) - 0.75rem);
     order: 5;
     height: 50%;
-    margin-left: calc((8.3% * 2) - .75rem);
+    margin-left: calc((8.3% * 2) - 0.75rem);
     display: flex;
     margin-top: 0;
     margin-right: 0 !important;
@@ -1119,12 +1126,12 @@ blockquote .quoteLine:last-child {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: calc((8.3% * 2) - .75rem);
-    margin-right: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
+    margin-right: calc((8.3% * 2) - 0.75rem);
   }
   #opera #yellow {
-    width: calc((8.3% * 2) - .75rem);
-    margin-left: calc(8.3% - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
+    margin-left: calc(8.3% - 0.75rem);
     order: 1;
     height: 50%;
     display: flex;
@@ -1134,11 +1141,11 @@ blockquote .quoteLine:last-child {
   }
   #opera #blue {
     order: 3;
-    width: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
     height: 50%;
     margin-bottom: 0 !important;
-    margin-left: .75rem;
-    margin-right: calc(8.3% - .75rem);
+    margin-left: 0.75rem;
+    margin-right: calc(8.3% - 0.75rem);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1150,18 +1157,18 @@ blockquote .quoteLine:last-child {
   #opera #black {
     order: 4;
     height: 50%;
-    width: calc((8.3% * 4) - .75rem);
-    margin-left: calc((8.3% * 3) - .75rem);
+    width: calc((8.3% * 4) - 0.75rem);
+    margin-left: calc((8.3% * 3) - 0.75rem);
   }
   #opera #quoteOpera {
     order: 5;
-    width: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
     margin-top: 01.5rem;
   }
   #opera #orange {
     order: 6;
     height: 35%;
-    width: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
     flex-grow: 1;
   }
   #upjohn {
@@ -1176,24 +1183,24 @@ blockquote .quoteLine:last-child {
   #upjohn #yellowSwoosh {
     height: 35%;
     order: 4;
-    width: calc((8.3% * 3) - .75rem);
-    margin-left: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 3) - 0.75rem);
+    margin-left: calc((8.3% * 2) - 0.75rem);
     margin-top: 0 !important;
     padding: 0 !important;
   }
   #upjohn #eggs {
-    width: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
     order: 1;
     padding-right: 1rem;
-    margin-left: .75rem;
+    margin-left: 0.75rem;
     display: flex;
     justify-content: flex-end;
   }
   #upjohn #brain {
-    width: calc((8.3% * 3) - .75rem);
+    width: calc((8.3% * 3) - 0.75rem);
     order: 4;
     padding-left: 1.5rem !important;
-    margin-left: calc((8.3% * 2) - .75rem);
+    margin-left: calc((8.3% * 2) - 0.75rem);
     display: flex;
     margin-top: 0 !important;
     justify-content: flex-start;
@@ -1202,7 +1209,7 @@ blockquote .quoteLine:last-child {
     height: 50%;
   }
   #upjohn #dude {
-    width: calc(8.3% - .75rem);
+    width: calc(8.3% - 0.75rem);
     order: 3;
     flex-grow: 1;
     margin-left: 0 !important;
@@ -1211,7 +1218,7 @@ blockquote .quoteLine:last-child {
     flex-direction: column;
   }
   #upjohn #titleUpjohn {
-    width: calc((8.3% * 5) - .75rem);
+    width: calc((8.3% * 5) - 0.75rem);
     order: 0;
     flex-direction: column;
     display: flex;
@@ -1219,7 +1226,7 @@ blockquote .quoteLine:last-child {
     align-items: flex-start;
   }
   #upjohn #quoteUpjohn {
-    width: calc((8.3% * 3) - .75rem);
+    width: calc((8.3% * 3) - 0.75rem);
     order: 2;
     display: flex;
     justify-content: flex-end;
@@ -1238,7 +1245,7 @@ blockquote .quoteLine:last-child {
     justify-content: flex-start;
     order: 0;
     margin-bottom: 0;
-    width: calc(8.3% - .75rem);
+    width: calc(8.3% - 0.75rem);
     margin-right: 2rem;
     flex-direction: row;
   }
@@ -1259,7 +1266,7 @@ blockquote .quoteLine:last-child {
   }
   #behindExhibit #ferrisAbout > div img {
     width: 100%;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
   #behindExhibit h1 {
     writing-mode: vertical-rl;
@@ -1289,28 +1296,28 @@ blockquote .quoteLine:last-child {
     position: relative;
   }
   #visitSectionContainer #visitInfo #visitHeading {
-    width: calc((8.3% * 6) - .75rem) !important;
+    width: calc((8.3% * 6) - 0.75rem) !important;
     display: flex;
     order: 0;
   }
   #visitSectionContainer #visitInfo #galleryName {
     display: flex;
-    width: calc((8.3% * 4) - .75rem) !important;
+    width: calc((8.3% * 4) - 0.75rem) !important;
     justify-content: space-between;
     order: 2;
   }
   #visitSectionContainer #visitInfo #galleryName blockquote {
-    width: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
   }
   #visitSectionContainer #visitInfo > div:not(#galleryMap) {
-    width: calc((8.3% * 2) - .75rem);
+    width: calc((8.3% * 2) - 0.75rem);
   }
   #visitSectionContainer #visitInfo #galleryMap {
     order: 1;
     order: 3;
     position: absolute;
     right: 0;
-    width: calc((8.3% * 6) - .75rem);
+    width: calc((8.3% * 6) - 0.75rem);
   }
   #visitSectionContainer #visitInfo #galleryHours {
     order: 4;
