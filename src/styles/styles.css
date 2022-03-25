@@ -427,6 +427,12 @@ blockquote {
 
 #herman {
   flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#titleHerman {
+  display: flex;
 }
 
 #herman .col {
@@ -434,12 +440,24 @@ blockquote {
   flex-direction: column;
 }
 
+#herman img {
+  margin-bottom: var(--gutter);
+}
+
 #herman .col:first-child {
-  width: 50%;
+  width: var(--widthFour);
+}
+
+#herman .col:first-child img {
+  height: auto;
 }
 
 #herman .col:nth-child(2) {
-  width: 50%;
+  width: var(--widthFour);
+}
+
+#corn {
+  margin-top: var(--gutter);
 }
 
 #herman .col:last-child {
@@ -697,7 +715,7 @@ blockquote {
   .col {
     width: unset;
   }
-  /* Opera Styles */
+  /* Opera Desktop Styles */
   #opera {
     height: 100vh;
     flex-direction: row;
@@ -723,6 +741,11 @@ blockquote {
     height: auto;
   }
 
+  #orange {
+    width: 60%;
+    align-self: flex-end;
+  }
+
   #quoteOpera {
     width: var(--widthTwo);
   }
@@ -742,6 +765,35 @@ blockquote {
     margin-top: var(--gutter);
     width: var(--widthThree);
     left: unset;
+  }
+
+  /* Herman Desktop Styles */
+
+  #herman .col {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  #herman .col:not(:last-child) {
+    margin-right: var(--gutter);
+  }
+
+  #quoteHerman {
+    width: 50%;
+    margin-top: 1rem;
+    max-width: 330px;
+  }
+
+  #herman .col:first-child {
+    width: var(--widthTwo);
+  }
+
+  #herman .col:nth-child(2) {
+    width: var(--widthTwo);
+  }
+
+  #herman .col:last-child {
+    width: var(--widthFour);
   }
 
   #behindExhibit {
