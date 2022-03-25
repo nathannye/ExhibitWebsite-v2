@@ -769,9 +769,18 @@ blockquote {
 
   /* Herman Desktop Styles */
 
+  #herman {
+    height: 90vh;
+  }
+
   #herman .col {
     flex-direction: column;
     flex-grow: 1;
+    height: 100%;
+  }
+
+  #herman img {
+    height: 100%;
   }
 
   #herman .col:not(:last-child) {
