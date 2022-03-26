@@ -291,6 +291,10 @@ footer a {
   overflow: hidden;
 }
 
+img {
+  height: 100%;
+}
+
 .workImageContainer.col img {
   object-fit: cover;
   will-change: transform;
@@ -335,8 +339,7 @@ blockquote {
   position: relative;
 }
 
-#upjohn,
-#french {
+#upjohn {
   display: none;
 }
 
@@ -367,6 +370,10 @@ blockquote {
   flex-wrap: wrap;
 }
 
+#autocam img {
+  height: 20%;
+}
+
 #autocam .col {
   display: flex;
   flex-direction: column;
@@ -387,6 +394,30 @@ blockquote {
 #autocam .col:nth-child(3) {
   width: 75%;
   margin-left: auto;
+}
+
+#french {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#french .col {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+#french .col:first-child {
+  width: 40%;
+}
+
+#french .col:nth-child(2) {
+  width: 40%;
+}
+
+#french .col:nth-child(3) {
+  width: 100%;
 }
 
 #opera {
@@ -745,17 +776,33 @@ blockquote {
 
   /* Autocam Desktop Styles */
 
-  #autocam .col {
-    flex-grow: 1;
+  #autocam {
+    height: 100vh;
   }
 
-  #autocam .col:nth-child(1) {
+  #autocam .col {
+    flex-grow: 1;
+    height: 80%;
+  }
+
+  #autocam .col:not(:last-child) {
+    margin: 0 var(--gutter) var(--gutter) 0;
+  }
+
+  #autocam .col:first-child img:first-of-type,
+  #autocam .col:nth-child(2) img:first-of-type,
+  #autocam .col:nth-child(3) img:first-of-type {
+    margin-bottom: var(--gutter);
+  }
+
+  #autocam .col:first-child {
     width: var(--widthTwo);
     margin-right: var(--gutter);
   }
 
   #autocam .col:nth-child(2) {
     width: var(--widthTwo);
+    align-self: flex-end;
     margin-right: var(--gutter);
   }
 
@@ -819,13 +866,13 @@ blockquote {
   /* Herman Desktop Styles */
 
   #herman {
-    height: 90vh;
+    height: 100vh;
   }
 
   #herman .col {
     flex-direction: column;
     flex-grow: 1;
-    height: 100%;
+    height: 80%;
   }
 
   #herman img {
@@ -844,14 +891,21 @@ blockquote {
 
   #herman .col:first-child {
     width: var(--widthTwo);
+    align-self: flex-end;
+    height: 70%;
+  }
+  #herman .col:first-child img {
+    height: 100%;
   }
 
   #herman .col:nth-child(2) {
     width: var(--widthTwo);
+    align-self: flex-start;
   }
 
   #herman .col:last-child {
     width: var(--widthFour);
+    align-self: flex-end;
   }
 
   #behindExhibit {
