@@ -66,7 +66,6 @@ header {
 header #quoteHeader {
   width: 91%;
   margin: 0 auto;
-  color: white;
 }
 
 header #quoteHeader p {
@@ -100,6 +99,23 @@ header #headerVideo {
 
 header #desktopWordMark {
   display: none;
+}
+
+#topBar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  z-index: 200;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: white;
+  text-align: center;
+  padding: 1.2rem 0;
+  width: 100%;
+  background-color: var(--deepBlack);
 }
 
 header blockquote {
@@ -192,15 +208,15 @@ a#toTopButtonMobile img {
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   background: var(--deepBlack);
   position: fixed;
   z-index: 100;
-  top: 0;
+  bottom: 0;
   margin: auto;
   left: 0;
-  padding: 1.5rem 4.9% 1.5rem 0;
+  padding: 1.5rem 4.9%;
 }
 
 nav a {
@@ -364,18 +380,73 @@ blockquote {
   height: auto;
 }
 
-#clothespin img {
+/* #clothespin img {
   width: var(--widthSix);
 }
 
 #yellowdot img {
   width: var(--widthSix);
-}
+} */
 
 #quoteUpjohn {
-  width: var(--witdhSix);
+  width: var(--widthSix);
+  margin-left: auto;
+  padding-right: var(--gutter);
+  margin-top: var(--gutter);
+  margin-bottom: var(--gutter);
 }
 
+#titleUpjohn {
+  position: absolute;
+}
+
+#upjohn .col:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+#clothespin {
+  width: 40%;
+  flex-grow: 1;
+  margin-left: calc(var(--gutter) / 2);
+  padding-right: calc(var(--gutter) / 2);
+}
+
+#yellowdot {
+  width: 40%;
+  flex-grow: 1;
+  margin-right: calc(var(--gutter) / 2);
+  padding-left: calc(var(--gutter) / 2);
+}
+
+#upjohn .col:nth-child(3) {
+  display: flex;
+  width: var(--widthSix);
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+#arm {
+  width: 100%;
+  margin-left: auto;
+}
+
+#egg {
+  width: var(--widthSix);
+  margin-top: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+#man {
+  width: var(--widthTwo);
+  margin-right: var(--gutter);
+  margin-top: var(--gutter);
+}
+
+/* 
 #arm img {
   width: var(--widthSix);
 }
@@ -386,7 +457,7 @@ blockquote {
 
 #man img {
   width: var(--widthTwo);
-}
+} */
 
 .upjohnContainer-2 {
   display: flex;
@@ -877,6 +948,11 @@ blockquote {
     max-width: 360px;
     color: white;
   }
+
+  #topBar {
+    display: none;
+  }
+
   a#toTopButtonMobile {
     display: none;
   }
@@ -893,6 +969,15 @@ blockquote {
     font-weight: 900;
     color: white;
   }
+
+  nav {
+    justify-content: flex-end;
+    top: 0;
+    margin: auto;
+    left: 0;
+    padding: 1.5rem 4.9% 1.5rem 0;
+  }
+
   header {
     height: 80vh;
     padding-top: 0;
