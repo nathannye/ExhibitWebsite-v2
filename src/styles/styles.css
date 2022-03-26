@@ -370,29 +370,57 @@ blockquote {
   flex-wrap: wrap;
 }
 
-#autocam img {
-  height: 20%;
-}
-
 #autocam .col {
   display: flex;
   flex-direction: column;
 }
 
 #autocam .col:first-child {
-  width: 50%;
+  /* width: 50%; */
+  width: var(--widthFour);
+  height: 40vh;
+  padding-right: calc(var(--gutter) / 2);
+  margin-left: var(--gutter);
 }
 
 #autocam .col:nth-child(2) {
-  width: 50%;
+  width: var(--widthFour);
+  padding-top: var(--unit);
+  height: 40vh;
+  padding-left: calc(var(--gutter) / 2);
+  margin-right: var(--gutter);
 }
 
 #titleAutocam {
+  margin-bottom: 1rem;
+}
+
+#factory {
+  height: 11vh;
+  margin-bottom: var(--gutter);
+}
+
+#copper {
+  height: 13vh;
+}
+
+#notebook {
+  height: 25vh;
+  margin-bottom: var(--gutter);
+}
+
+#apple {
+  height: 22vh;
+}
+
+#birds {
+  height: 29vh;
   margin-bottom: var(--gutter);
 }
 
 #autocam .col:nth-child(3) {
   width: 75%;
+  margin-top: var(--gutter);
   margin-left: auto;
 }
 
@@ -405,19 +433,48 @@ blockquote {
 #french .col {
   display: flex;
   flex-direction: column;
-  width: 20%;
 }
 
 #french .col:first-child {
-  width: 40%;
+  height: 50vh;
+  flex-grow: 1;
+  padding-right: calc(var(--gutter) / 2);
 }
 
 #french .col:nth-child(2) {
-  width: 40%;
+  height: 50vh;
+  flex-grow: 1;
+  padding-left: calc(var(--gutter) / 2);
+  margin-right: var(--gutter);
 }
 
 #french .col:nth-child(3) {
   width: 100%;
+  flex-direction: row;
+  margin-left: var(--gutter);
+  margin-right: var(--gutter);
+}
+
+#dog {
+  width: 50%;
+}
+
+#queen {
+  width: 50%;
+}
+
+#jerry {
+  height: 30vh;
+  margin-left: var(--gutter);
+  object-fit: contain;
+}
+
+#scatter {
+  height: 10vh;
+}
+
+#meat {
+  height: 31vh;
 }
 
 #opera {
@@ -437,10 +494,6 @@ blockquote {
   /* margin-right: var(--gutter); */
 }
 
-#opera .col:not(:last-child) {
-  margin-right: var(--gutter);
-}
-
 #opera .col img,
 #quoteOpera,
 #headingOpera {
@@ -448,12 +501,17 @@ blockquote {
 }
 
 #opera .col:first-child {
-  width: var(--widthThree);
+  width: var(--widthFour);
   height: 100%;
+}
+
+#sword {
+  height: 15vh;
 }
 
 #opera .col:nth-child(2) {
   width: 50%;
+  margin-bottom: var(--gutter);
   height: 68px;
   flex-direction: row;
 }
@@ -464,21 +522,28 @@ blockquote {
 
 #blue {
   margin-bottom: 0 !important;
+  height: 39vh;
+}
+
+#orange {
+  margin-left: var(--gutter);
+}
+
+#opera .col:first-child {
+  margin-right: var(--gutter);
 }
 
 #opera .col:last-child {
   width: 50%;
-  height: 40%;
   position: relative;
 }
 
 #quoteOpera {
-  /* width: var(--widthTwo); */
   width: 100%;
   position: absolute;
-  width: 100%;
-  bottom: calc(-80% - var(--gutter));
-  left: 0;
+  width: calc(100vw - var(--gutter));
+  bottom: calc(-27% - var(--gutter));
+  left: -50vw;
 }
 
 /* Herman Mobile Styles */
@@ -803,11 +868,11 @@ blockquote {
 
   #autocam {
     height: 100vh;
+    margin-left: var(--widthOne);
   }
 
   #autocam .col {
     flex-grow: 1;
-    height: 80%;
   }
 
   #autocam .col:not(:last-child) {
@@ -820,20 +885,52 @@ blockquote {
     margin-bottom: var(--gutter);
   }
 
+  #notebook {
+    height: 60%;
+  }
+
+  #copper {
+    height: 30%;
+  }
+
+  #factory {
+    height: 30%;
+  }
+
+  #birds {
+    height: 60%;
+  }
+
+  #quoteAutocam {
+    /* width: var(--widthThree); */
+    width: 100%;
+    max-width: 330px;
+  }
+
+  #apple {
+    height: 60%;
+  }
+
   #autocam .col:first-child {
     width: var(--widthTwo);
+    height: 70%;
+    margin-bottom: 0;
+    padding: 0;
     margin-right: var(--gutter);
   }
 
   #autocam .col:nth-child(2) {
     width: var(--widthTwo);
     align-self: flex-end;
+    height: 70%;
+    padding: 0;
     margin-right: var(--gutter);
   }
 
   #autocam .col:nth-child(3) {
     width: var(--widthThree);
     margin: 0;
+    height: 70%;
   }
 
   /* Opera Desktop Styles */
@@ -874,6 +971,10 @@ blockquote {
   #blue {
     margin-bottom: var(--gutter);
     height: 40%;
+  }
+
+  #opera .col:not(:last-child) {
+    margin-right: var(--gutter);
   }
 
   #opera .col:last-child {
