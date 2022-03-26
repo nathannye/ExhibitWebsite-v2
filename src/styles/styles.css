@@ -404,6 +404,7 @@ blockquote {
 
 #titleUpjohn {
   position: absolute;
+  writing-mode: vertical-lr;
 }
 
 #upjohn .col:nth-child(2) {
@@ -1102,6 +1103,53 @@ blockquote {
     width: var(--widthThree);
     margin: 0;
     height: 70%;
+  }
+
+  #upjohn {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+  }
+
+  #titleUpjohn{
+    
+  }
+
+  #upjohn .col {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  #upjohn .col:nth-child(2) {
+    flex-direction: column;
+  }
+
+  #clothespin {
+    height: 40%;
+  }
+
+  #yellowDot {
+    height: 40%;
+  }
+
+  #upjohn .col:nth-child(3) {
+    flex-direction: row !important;
+  }
+
+  #arm {
+    height: 40%;
+    margin-top: 0;
+  }
+
+  #egg {
+    height: 30%;
+    margin-top: 0;
+  }
+
+  #man {
+    height: 10%;
+    margin: 0;
   }
 
   /* Opera Desktop Styles */
