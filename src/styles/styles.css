@@ -21,9 +21,11 @@ html {
   --widthSix: calc(var(--unit) * 6);
   --widthSeven: calc(var(--unit) * 7);
   --widthEight: calc(var(--unit) * 8);
+
   font-family: "Lato", Tahoma, sans-serif;
   font-size: 87.5%;
   font-kerning: normal;
+  margin-top: 5rem;
   background: var(--deepBlack);
   scroll-behavior: smooth;
 }
@@ -363,15 +365,17 @@ blockquote {
 }
 
 #autocam {
-  height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+#autocam img {
+  height: 20%;
+}
+
 #autocam .col {
   display: flex;
-  height: 100%;
   flex-direction: column;
 }
 
@@ -387,27 +391,6 @@ blockquote {
   margin-bottom: var(--gutter);
 }
 
-#notebook {
-  height: 20%;
-}
-
-#apple {
-  height: 20%;
-}
-
-#copper {
-  height: 10%;
-}
-
-#factory {
-  height: 10%;
-}
-
-#birds {
-  height: 30%;
-}
-
-#birds,
 #autocam .col:nth-child(3) {
   width: 75%;
   margin-left: auto;
@@ -416,57 +399,17 @@ blockquote {
 #french {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
   flex-direction: row;
-}
-
-#titleFrench {
-  display: flex;
 }
 
 #french .col {
   display: flex;
   flex-direction: column;
   width: 20%;
-  height: 100%;
-}
-
-#jerry {
-  /* object-fit: fill; */
-  height: 20%;
-}
-
-#queen {
-  height: 25%;
-}
-
-#meat {
-  height: 30%;
-}
-
-#scatter {
-  height: 20%;
-}
-
-#french {
-  height: 100vh;
-}
-
-#french .col {
-  height: 100%;
-}
-
-#french .col:not(:nth-child(3)) {
-  margin-right: var(--gutter);
 }
 
 #french .col:first-child {
   width: 40%;
-}
-
-#titleFrench h1 {
-  writing-mode: vertical-lr;
-  transform: scale(-1, -1);
 }
 
 #french .col:nth-child(2) {
@@ -544,9 +487,7 @@ blockquote {
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
-  height: 100vh;
-<<<<<<< Updated upstream
-=======
+  /* height: 100vh; */
 }
 
 #red {
@@ -568,8 +509,7 @@ blockquote {
 #sofa {
   margin-left: var(--gutter);
   margin-bottom: var(--gutter);
-  height: 18vh;
->>>>>>> Stashed changes
+  height: 18%;
 }
 
 #titleHerman {
@@ -578,11 +518,7 @@ blockquote {
 
 #herman .col {
   display: flex;
-<<<<<<< Updated upstream
-  height: 30%;
-=======
-  /* height: 100vh; */
->>>>>>> Stashed changes
+  height: unset;
   flex-direction: column;
 }
 
@@ -596,7 +532,7 @@ blockquote {
 }
 
 #herman .col:first-child img {
-  /* height: auto; */
+  height: auto;
 }
 
 #herman .col:nth-child(2) {
@@ -862,36 +798,6 @@ blockquote {
   .col {
     width: unset;
   }
-
-  /* French Desktop Styles */
-
-  #french {
-    height: 90vh;
-    display: flex;
-    flex-direction: row;
-  }
-
-  #french .col {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  #french.col:first-child {
-    width: var(--widthTwo);
-  }
-
-  #french .col:nth-child(2) {
-    width: var(--widthTwo);
-  }
-
-  #french .col:nth-child(3) {
-    width: var(--widthTwo);
-  }
-
-  /* #queen {
-    width: var(--widthSix);
-  } */
 
   /* Autocam Desktop Styles */
 
