@@ -363,17 +363,15 @@ blockquote {
 }
 
 #autocam {
+  height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-#autocam img {
-  /* height: 20%; */
-}
-
 #autocam .col {
   display: flex;
+  height: 100%;
   flex-direction: column;
 }
 
@@ -389,6 +387,27 @@ blockquote {
   margin-bottom: var(--gutter);
 }
 
+#notebook {
+  height: 20%;
+}
+
+#apple {
+  height: 20%;
+}
+
+#copper {
+  height: 10%;
+}
+
+#factory {
+  height: 10%;
+}
+
+#birds {
+  height: 30%;
+}
+
+#birds,
 #autocam .col:nth-child(3) {
   width: 75%;
   margin-left: auto;
@@ -397,13 +416,44 @@ blockquote {
 #french {
   display: flex;
   flex-wrap: wrap;
+  height: 100vh;
   flex-direction: row;
+}
+
+#titleFrench {
+  display: flex;
 }
 
 #french .col {
   display: flex;
   flex-direction: column;
   width: 20%;
+  height: 100%;
+}
+
+#jerry {
+  /* object-fit: fill; */
+  height: 20%;
+}
+
+#queen {
+  height: 25%;
+}
+
+#meat {
+  height: 30%;
+}
+
+#scatter {
+  height: 20%;
+}
+
+#french {
+  height: 100vh;
+}
+
+#french .col {
+  height: 100%;
 }
 
 #french .col:not(:nth-child(3)) {
@@ -414,8 +464,9 @@ blockquote {
   width: 40%;
 }
 
-#titleFrench h1{
-  
+#titleFrench h1 {
+  writing-mode: vertical-lr;
+  transform: scale(-1, -1);
 }
 
 #french .col:nth-child(2) {
@@ -493,6 +544,7 @@ blockquote {
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
+  height: 100vh;
 }
 
 #titleHerman {
@@ -501,6 +553,7 @@ blockquote {
 
 #herman .col {
   display: flex;
+  height: 30%;
   flex-direction: column;
 }
 
