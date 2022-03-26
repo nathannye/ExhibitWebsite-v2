@@ -545,6 +545,8 @@ blockquote {
   flex-wrap: wrap;
   display: flex;
   height: 100vh;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 }
 
 #titleHerman {
@@ -553,7 +555,11 @@ blockquote {
 
 #herman .col {
   display: flex;
+<<<<<<< Updated upstream
   height: 30%;
+=======
+  /* height: 100vh; */
+>>>>>>> Stashed changes
   flex-direction: column;
 }
 
