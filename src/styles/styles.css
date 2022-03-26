@@ -337,9 +337,9 @@ blockquote {
   position: relative;
 }
 
-#upjohn {
+/*#upjohn {
   display: none;
-}
+}*/
 
 #companyContainer {
   margin-bottom: 12rem;
@@ -415,7 +415,7 @@ blockquote {
 }
 
 #titleFrench h1{
-  
+
 }
 
 #french .col:nth-child(2) {
