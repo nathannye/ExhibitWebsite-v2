@@ -673,40 +673,59 @@ blockquote {
   margin: auto;
 }
 
+#visitHeading > *:not(em) {
+  color: var(--darkgry);
+}
+
 #visitSectionContainer > div > div {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
+#visitInfo .col:first-child {
+  width: 100%;
+}
+
 #visitSectionContainer #visitInfo {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
 }
 
-#visitSectionContainer #visitInfo blockquote .quoteLine:first-child {
-  margin-bottom: 0.25rem;
+#visitInfo .col:nth-child(2) {
+  width: 100%;
 }
 
-#visitSectionContainer #visitInfo blockquote .quoteLine:last-child {
-  margin-top: 0.25rem;
+#visitHeading {
+  margin-bottom: var(--gutter);
 }
 
-#visitSectionContainer #visitInfo #galleryParking {
-  width: calc((8.3% * 9) - 0.75rem);
+#galleryParking {
+  max-width: 330px;
+}
+
+#visitInfo .col:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  /* width: var(--wdithTwo); */
 }
 
 #galleryMap {
   flex-grow: 1;
-  width: var(--widthFour);
-  margin-top: 1rem;
+  /* width: var(--widthFour); */
+  width: 60%;
   height: 320px;
+  margin-right: var(--gutter);
 }
 
-#visitSectionContainer .col {
+/* #visitSectionContainer .col {
   display: flex;
   width: 100%;
-}
+} */
 
 #behindExhibit {
   display: flex;
@@ -1193,6 +1212,7 @@ blockquote {
     transform: scale(-1, -1);
     text-align: right;
   }
+
   #behindExhibit #archivesAbout {
     width: 20%;
     margin-right: 11%;
@@ -1212,13 +1232,21 @@ blockquote {
     margin-top: 36rem;
   }
 
-  #galleryHours {
+  #visitSectionContainer #visitInfo {
+    width: var(--widthSix);
+  }
+
+  #galleryName {
+    width: var(--widthFive);
+  }
+
+  /* #galleryHours {
     width: var(--widthTwo);
   }
 
   #galleryParking {
     width: var(--widthTwo);
-  }
+  } */
 
   footer {
     margin-top: 0%;
