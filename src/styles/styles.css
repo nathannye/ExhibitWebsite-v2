@@ -340,7 +340,7 @@ a.caratLink {
 
 a.caratLink::after {
   content: "";
-  background: url("./../assets/caratIcon.svg");
+  background: url("./../img/caratIcon.svg");
   height: 13px;
   width: 13px;
   right: -1.25rem;
@@ -989,7 +989,10 @@ blockquote {
   nav {
     justify-content: flex-end;
     top: 0;
-    margin: auto;
+    display: flex;
+    margin: 0;
+    align-items: flex-start;
+    height: 30px;
     left: 0;
     padding: 1.5rem 4.9% 1.5rem 0;
   }
