@@ -513,6 +513,7 @@ blockquote {
   width: 50%;
   margin-bottom: var(--gutter);
   height: 68px;
+  padding-right: var(--gutter);
   flex-direction: row;
 }
 
