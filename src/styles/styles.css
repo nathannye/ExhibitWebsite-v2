@@ -48,6 +48,12 @@ h1 div {
   transform-style: preserve-3d;
 }
 
+h1 {
+  perspective: 200px;
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+}
+
 h1 em,
 .ylw {
   color: var(--ylw);
@@ -514,6 +520,7 @@ blockquote {
 
 #birds {
   height: 29vh;
+  margin-top: var(--gutter);
   margin-bottom: var(--gutter);
 }
 
@@ -638,6 +645,14 @@ blockquote {
   width: 50%;
 }
 
+#yellow {
+  padding-right: calc(var(--gutter) / 2);
+}
+
+#green {
+  padding-left: calc(var(--gutter) / 2);
+}
+
 #blue {
   margin-bottom: 0 !important;
   height: 39vh;
@@ -697,6 +712,7 @@ blockquote {
 
 #titleHerman {
   display: flex;
+  margin-bottom: 1rem;
 }
 
 #herman .col {
