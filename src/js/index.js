@@ -190,7 +190,7 @@ setuph1();
 // Nav hover animation
 
 let links = gsap.utils.toArray("nav > a");
-const linkName = ["preview", "visit", "behind the exhibit"];
+const linkName = ["plan a visit", "behind the exhibit"];
 
 for (let i = 0; i < links.length; i++) {
   let top = document.createElement("span");

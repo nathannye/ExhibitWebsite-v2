@@ -124,8 +124,16 @@ header #desktopWordMark {
   background-color: var(--deepBlack);
 }
 
-header blockquote {
+#quoteHeader p{
+  margin:0  var(--widthOne) 0 var(--widthOne);
   color: white;
+}
+
+#quoteHeader .pullquote{
+  font-weight: 700;
+  color: white;
+  margin-bottom: 24px;
+  margin-left: var(--widthOne);
 }
 
 header #wordMark {
@@ -452,7 +460,7 @@ blockquote {
   margin-top: var(--gutter);
 }
 
-/* 
+/*
 #arm img {
   width: var(--widthSix);
 }
