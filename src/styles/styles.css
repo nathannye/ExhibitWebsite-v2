@@ -35,7 +35,7 @@ h1 {
   text-transform: uppercase;
   line-height: 1;
   font-weight: 900;
-  color: var(--darkgry);
+  color: white;
   perspective: 200px;
   backface-visibility: visible;
   transform-style: preserve-3d;
@@ -339,9 +339,9 @@ blockquote {
   position: relative;
 }
 
-#upjohn {
+/*#upjohn {
   display: none;
-}
+}*/
 
 #companyContainer {
   margin-bottom: 12rem;
@@ -362,6 +362,34 @@ blockquote {
 .workImageContainer img {
   width: 100%;
   height: auto;
+}
+
+#clothespin img{
+  width: var(--widthSix);
+}
+
+#yellowdot img{
+  width: var(--widthSix);
+}
+
+#quoteUpjohn {
+  width: var(--witdhSix)
+}
+
+#arm img{
+  width: var(--widthSix);
+}
+
+#egg img{
+  width: var(--widthFour);
+}
+
+#man img{
+  width: var(--widthTwo);
+}
+
+.upjohnContainer-2{
+  display: flex;
 }
 
 #autocam {
