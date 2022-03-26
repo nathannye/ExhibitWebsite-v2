@@ -546,6 +546,29 @@ blockquote {
   display: flex;
   height: 100vh;
 <<<<<<< Updated upstream
+=======
+}
+
+#red {
+  height: 15vh;
+}
+
+#fish {
+  height: 24vh;
+}
+
+#corn {
+  height: 34vh;
+}
+
+#thankyou {
+  height: 17vh;
+}
+
+#sofa {
+  margin-left: var(--gutter);
+  margin-bottom: var(--gutter);
+  height: 18vh;
 >>>>>>> Stashed changes
 }
 
@@ -569,10 +592,11 @@ blockquote {
 
 #herman .col:first-child {
   width: var(--widthFour);
+  margin-right: var(--gutter);
 }
 
 #herman .col:first-child img {
-  height: auto;
+  /* height: auto; */
 }
 
 #herman .col:nth-child(2) {
