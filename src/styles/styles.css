@@ -49,7 +49,7 @@ h1 div {
 }
 
 h1 em,
-h1.ylw {
+.ylw {
   color: var(--ylw);
   font-style: normal;
 }
@@ -364,31 +364,31 @@ blockquote {
   height: auto;
 }
 
-#clothespin img{
+#clothespin img {
   width: var(--widthSix);
 }
 
-#yellowdot img{
+#yellowdot img {
   width: var(--widthSix);
 }
 
 #quoteUpjohn {
-  width: var(--witdhSix)
+  width: var(--witdhSix);
 }
 
-#arm img{
+#arm img {
   width: var(--widthSix);
 }
 
-#egg img{
+#egg img {
   width: var(--widthFour);
 }
 
-#man img{
+#man img {
   width: var(--widthTwo);
 }
 
-.upjohnContainer-2{
+.upjohnContainer-2 {
   display: flex;
 }
 
@@ -469,6 +469,14 @@ blockquote {
   padding-right: calc(var(--gutter) / 2);
 }
 
+#dog {
+  padding-right: calc(var(--gutter) / 2);
+}
+
+#queen {
+  padding-left: calc(var(--gutter) / 2);
+}
+
 #french .col:nth-child(2) {
   height: 50vh;
   flex-grow: 1;
@@ -491,10 +499,20 @@ blockquote {
   width: 50%;
 }
 
+#titleFrench {
+  margin-bottom: var(--gutter);
+}
+
+#titleFrench h1 {
+  writing-mode: vertical-lr;
+  transform: scale(-1, -1);
+}
+
 #jerry {
   height: 30vh;
   margin-left: var(--gutter);
   object-fit: contain;
+  margin-bottom: var(--gutter);
 }
 
 #scatter {
@@ -678,15 +696,16 @@ blockquote {
   width: calc((8.3% * 9) - 0.75rem);
 }
 
-#visitSectionContainer #galleryMap {
+#galleryMap {
   flex-grow: 1;
-  background: reds;
+  width: var(--widthFour);
   margin-top: 1rem;
   height: 320px;
 }
 
-#visitSectionContainer #galleryParking {
-  flex-grow: 1;
+#visitSectionContainer .col {
+  display: flex;
+  width: 100%;
 }
 
 #behindExhibit {
@@ -1019,7 +1038,6 @@ blockquote {
   }
 
   /* Herman Desktop Styles */
-
   #herman {
     height: 100vh;
   }
@@ -1061,6 +1079,77 @@ blockquote {
   #herman .col:last-child {
     width: var(--widthFour);
     align-self: flex-end;
+  }
+
+  /* French Desktop Styles */
+
+  #french {
+    height: 100vh;
+  }
+
+  #french .col {
+    flex-grow: 1;
+  }
+
+  #french .col:first-child {
+    width: var(--widthThree);
+    height: 100%;
+    padding: 0;
+    margin-right: var(--gutter);
+    /* flex-grow: unset !important; */
+  }
+
+  #french .col:nth-child(2) {
+    width: var(--widthTwo);
+    height: 70%;
+    padding-top: var(--gutter);
+    padding: 0;
+    /* flex-grow: unset !important; */
+  }
+
+  #french .col:nth-child(3) {
+    width: var(--widthThree);
+    flex-direction: column;
+    margin-left: 0;
+    height: 100%;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+    /* flex-grow: unset !important; */
+  }
+
+  #quoteFrench {
+    /* width: var(--widthThree); */
+    max-width: 330px;
+    margin-top: var(--gutter);
+    margin-left: var(--widthOne);
+  }
+
+  #queen {
+    padding-left: 0;
+    width: var(--widthFour);
+    height: 33%;
+  }
+
+  #jerry {
+    height: 44%;
+    /* width: var(--widthTwo); */
+  }
+
+  #meat {
+    height: 100%;
+    /* padding-bottom: calc(var(--unit) * 3); */
+  }
+
+  #scatter {
+    height: 31%;
+  }
+
+  #dog {
+    padding-right: 0;
+    width: unset;
+    height: 33%;
+    margin-bottom: var(--gutter);
   }
 
   #behindExhibit {
@@ -1122,41 +1211,15 @@ blockquote {
   #visitSectionContainer {
     margin-top: 36rem;
   }
-  #visitSectionContainer #visitInfo {
-    flex-wrap: wrap;
-    position: relative;
+
+  #galleryHours {
+    width: var(--widthTwo);
   }
-  #visitSectionContainer #visitInfo #visitHeading {
-    width: calc((8.3% * 6) - 0.75rem) !important;
-    display: flex;
-    order: 0;
+
+  #galleryParking {
+    width: var(--widthTwo);
   }
-  #visitSectionContainer #visitInfo #galleryName {
-    display: flex;
-    width: calc((8.3% * 4) - 0.75rem) !important;
-    justify-content: space-between;
-    order: 2;
-  }
-  #visitSectionContainer #visitInfo #galleryName blockquote {
-    width: calc((8.3% * 2) - 0.75rem);
-  }
-  #visitSectionContainer #visitInfo > div:not(#galleryMap) {
-    width: calc((8.3% * 2) - 0.75rem);
-  }
-  #visitSectionContainer #visitInfo #galleryMap {
-    order: 1;
-    order: 3;
-    position: absolute;
-    right: 0;
-    width: calc((8.3% * 6) - 0.75rem);
-  }
-  #visitSectionContainer #visitInfo #galleryHours {
-    order: 4;
-  }
-  #visitSectionContainer #visitInfo #galleryParking {
-    flex-grow: unset;
-    order: 5;
-  }
+
   footer {
     margin-top: 0%;
   }
