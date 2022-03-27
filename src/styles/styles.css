@@ -1160,9 +1160,12 @@ blockquote {
     top: unset;
     align-self: center;
     height: 80%;
+    /* padding-bottom: 32%; */
+    margin-right: var(--gutter);
+    transform: translate(0) scale(-1, -1);
     /* margin-top: calc(40% + var(--gutter)); */
     margin-left: calc(var(--widthOne) + var(--gutter));
-    margin-right: var(--gutter);
+    /* margin-right: var(--gutter); */
   }
 
   #upjohn .col {
