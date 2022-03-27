@@ -23,12 +23,12 @@
   <body>
     <div id="topBar">unexpected choices</div>
     <a id="top"></a>
-    <div id="workPopup">
+    <!-- <div id="workPopup">
       <article>
         <h2></h2>
         <a class="caratLink"></a>
       </article>
-    </div>
+    </div> -->
     <div id="loaderCover">
       <div id="loaderBlock"></div>
     </div>
@@ -37,26 +37,11 @@
       <a href="#behind"></a>
     </nav>
     <header>
-      <div id="headerVideo">
-        <video loop>
-          <source src="./src/img/reviewFinalVideo_2.mp4" />
-        </video>
-        <img src="./src/img/desktopWorkmark.svg" alt="" id="desktopWordMark" />
-        <img
-          id="wordMark"
-          src="./src/img/wordmark.svg"
-          alt="Unexpected Choices Logo"
-        />
-        <div id="headerTagline">
-          Achieving Business Goals Through Graphic Design
-        </div>
-      </div>
+      <video loop>
+        <source src="./src/img/reviewFinalVideo_2.mp4" />
+      </video>
     </header>
     <div id="quoteHeader">
-      <blockquote class="pullquote">
-        APRIL 11 – MAY 7, 2022<br />FERRIS STATE UNIVERSITY<br />
-        FINE ART GALLERY
-      </blockquote>
       <p>
         Right here in West Michigan, businesses trusted graphic designers to
         make new or complex products and ideas clear and engaging. Designers
@@ -65,6 +50,12 @@
         Center has collaborated with the West Michigan Graphic Design Archives
         to produce this exhibit. Be inspired and delighted!
       </p>
+      <blockquote class="pullquote">
+        <span class="quoteLine"></span>
+        APRIL 11 – MAY 7, 2022<br />FERRIS STATE UNIVERSITY<br />
+        FINE ART GALLERY
+        <span class="quoteLine"></span>
+      </blockquote>
     </div>
     <a href="#top" id="toTopButton">back to top</a>
 
@@ -74,76 +65,28 @@
 
     <!-- Autocam -->
     <div id="companyContainer">
-      <section id="autocam" class="companySection">
-        <div class="col">
-          <img src="./src/img/autocam/notebook.jpg" id="notebook" />
-          <img src="./src/img/autocam/copper.jpg" id="copper" />
+      <!-- Upjohn -->
+      <section id="upjohn" class="companySection">
+        <div class="col" id="titleUpjohn">
+          <h1>company</h1>
+          <h1 class="ylw">the upjohn</h1>
         </div>
         <div class="col">
-          <img src="./src/img/autocam/factory.jpg" id="factory" />
-          <img src="./src/img/autocam/apple.jpg" id="apple" />
-        </div>
-        <div class="col">
-          <img src="./src/img/autocam/birds.jpg" id="birds" />
-          <h1 class="ylw" id="titleAutocam">autocam</h1>
-          <blockquote id="quoteAutocam">
-            A maker of precision automotive, computer, and medical components,
-            Autocam needed to convey to investors and customers their technical
-            prowess and attention to detail. Compelling storytelling through
-            typography and photography contributed to their success.
-          </blockquote>
-        </div>
-        <a id="preview" class="scrollLink"></a>
-      </section>
-
-      <!-- French Paper -->
-      <section id="french" class="companySection">
-        <div class="col">
-          <img src="./src/img/french/jerry.png" id="jerry" />
-          <img src="./src/img/french/scatter.jpg" id="scatter" />
-          <blockquote id="quoteFrench">
-            A producer of premium papers, French Paper needed to differentiate
-            themselves with graphic designers. They got attention and
-            demonstrated how paper could contribute to the effectiveness of a
-            communications piece.
-          </blockquote>
-        </div>
-        <div class="col">
-          <div id="titleFrench">
-            <h1>
-              paper<br />
-              <span class="ylw">french</span>
-            </h1>
+          <img src="./src/img/upjohn/clothespin.jpg" id="clothespin" />
+          <img src="./src/img/upjohn/yellowdot.jpg" id="yellowDot" />
+          <div id="quoteUpjohn">
+            <blockquote>
+              As a pioneering pharmaceutical company, Upjohn needed to
+              demonstrate its scientific knowledge and educate physicians and
+              pharmacists. By working with researchers to deeply understand the
+              content, designers could interpret for their audiences.
+            </blockquote>
           </div>
-          <img src="./src/img/french/meat.jpg" id="meat" />
         </div>
         <div class="col">
-          <img src="./src/img/french/dog.jpg" id="dog" />
-          <img src="./src/img/french/queen.jpg" id="queen" />
-        </div>
-      </section>
-
-      <!-- Herman Miller -->
-      <section id="herman" class="companySection">
-        <div class="col">
-          <img src="./src/img/herman/thankyou.jpg" id="thankyou" />
-          <img src="./src/img/herman/sofa.png" id="sofa" />
-        </div>
-        <div class="col">
-          <img src="./src/img/herman/redchairs.jpg" id="red" />
-          <img src="./src/img/herman/fish.jpg" id="fish" />
-        </div>
-        <div class="col">
-          <div id="titleHerman">
-            <h1>herman <em>miller</em></h1>
-          </div>
-          <blockquote id="quoteHerman">
-            The West Michigan-based furniture maker needed to convey its
-            problem-solving designs to audiences from interior designers to bean
-            counters, and everyone in between. It did so by making
-            human-to-human connections.
-          </blockquote>
-          <img src="./src/img/herman/corn.jpg" id="corn" />
+          <img src="./src/img/upjohn/arm.jpg" id="arm" />
+          <img src="./src/img/upjohn/egg.jpg" id="egg" />
+          <img src="./src/img/upjohn/man.jpg" id="man" />
         </div>
       </section>
 
@@ -187,28 +130,77 @@
         </div>
       </section>
 
-      <!-- Upjohn -->
-      <section id="upjohn" class="companySection">
-        <div class="col" id="titleUpjohn">
-          <h1 class="ylw">the upjohn</h1>
-          <h1>company</h1>
+      <!-- Autocam -->
+      <section id="autocam" class="companySection">
+        <div class="col">
+          <img src="./src/img/autocam/notebook.jpg" id="notebook" />
+          <img src="./src/img/autocam/copper.jpg" id="copper" />
         </div>
         <div class="col">
-          <img src="./src/img/upjohn/clothespin.jpg" id="clothespin" />
-          <img src="./src/img/upjohn/yellowdot.jpg" id="yellowdot" />
-          <div id="quoteUpjohn">
-            <blockquote>
-              As a pioneering pharmaceutical company, Upjohn needed to
-              demonstrate its scientific knowledge and educate physicians and
-              pharmacists. By working with researchers to deeply understand the
-              content, designers could interpret for their audiences.
-            </blockquote>
+          <img src="./src/img/autocam/factory.jpg" id="factory" />
+          <img src="./src/img/autocam/apple.jpg" id="apple" />
+        </div>
+        <div class="col">
+          <img src="./src/img/autocam/birds.jpg" id="birds" />
+          <h1 class="ylw" id="titleAutocam">autocam</h1>
+          <blockquote id="quoteAutocam">
+            A maker of precision automotive, computer, and medical components,
+            Autocam needed to convey to investors and customers their technical
+            prowess and attention to detail. Compelling storytelling through
+            typography and photography contributed to their success.
+          </blockquote>
+        </div>
+        <a id="preview" class="scrollLink"></a>
+      </section>
+
+      <!-- Herman Miller -->
+      <section id="herman" class="companySection">
+        <div class="col">
+          <img src="./src/img/herman/thankyou.jpg" id="thankyou" />
+          <img src="./src/img/herman/sofa.png" id="sofa" />
+        </div>
+        <div class="col">
+          <img src="./src/img/herman/redchairs.jpg" id="red" />
+          <img src="./src/img/herman/fish.jpg" id="fish" />
+        </div>
+        <div class="col">
+          <div id="titleHerman">
+            <h1>herman <em>miller</em></h1>
           </div>
+          <blockquote id="quoteHerman">
+            The West Michigan-based furniture maker needed to convey its
+            problem-solving designs to audiences from interior designers to bean
+            counters, and everyone in between. It did so by making
+            human-to-human connections.
+          </blockquote>
+          <img src="./src/img/herman/corn.jpg" id="corn" />
+        </div>
+      </section>
+
+      <!-- French Paper -->
+      <section id="french" class="companySection">
+        <div class="col">
+          <img src="./src/img/french/jerry.png" id="jerry" />
+          <img src="./src/img/french/scatter.jpg" id="scatter" />
+          <blockquote id="quoteFrench">
+            A producer of premium papers, French Paper needed to differentiate
+            themselves with graphic designers. They got attention and
+            demonstrated how paper could contribute to the effectiveness of a
+            communications piece.
+          </blockquote>
         </div>
         <div class="col">
-          <img src="./src/img/upjohn/arm.jpg" id="arm" />
-          <img src="./src/img/upjohn/egg.jpg" id="egg" />
-          <img src="./src/img/upjohn/man.jpg" id="man" />
+          <div id="titleFrench">
+            <h1>
+              paper<br />
+              <span class="ylw">french</span>
+            </h1>
+          </div>
+          <img src="./src/img/french/meat.jpg" id="meat" />
+        </div>
+        <div class="col">
+          <img src="./src/img/french/dog.jpg" id="dog" />
+          <img src="./src/img/french/queen.jpg" id="queen" />
         </div>
       </section>
     </div>

@@ -63,18 +63,21 @@ h1 em,
 header {
   position: relative;
   padding-top: 6%;
+  height: 60vh;
+  margin-bottom: 5rem;
   display: flex;
-  margin-right: calc(8.3% - 0.75rem);
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
-header #quoteHeader {
-  width: 91%;
-  margin: 0 auto;
+#quoteHeader {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-left: var(--widthOne);
 }
 
-header #quoteHeader p {
+#quoteHeader p {
   margin-top: 1rem;
 }
 
@@ -91,20 +94,26 @@ header #headerTagline {
   top: 4.65%;
 }
 
+#quoteHeader p {
+  color: white;
+  font-size: 24px;
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+#quoteHeader .pullquote {
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  width: var(--widthTwo);
+  margin-bottom: 24px;
+}
+
 header #headerTagline * {
   perspective: 200px;
   backface-visibility: visible;
   transform-style: preserve-3d;
-}
-
-header #headerVideo {
-  position: relative;
-  height: 40vh;
-  margin-bottom: 4rem;
-}
-
-header #desktopWordMark {
-  display: none;
 }
 
 #topBar {
@@ -124,32 +133,11 @@ header #desktopWordMark {
   background-color: var(--deepBlack);
 }
 
-#quoteHeader p {
-  margin: 0 var(--widthOne) 0 var(--widthOne);
-  color: white;
-}
-
-#quoteHeader .pullquote {
-  font-weight: 700;
-  color: white;
-  margin-bottom: 24px;
-  margin-left: var(--widthOne);
-}
-
-header #wordMark {
-  width: calc((8.3% * 11) - 0.75rem);
-  position: absolute;
-  z-index: 10;
-  right: 4.5%;
-  bottom: -1rem;
-}
-
 header video {
   width: 100%;
+  height: 100%;
   opacity: 1;
-  height: 40vh;
   z-index: -1;
-  position: relative;
   object-fit: cover;
 }
 
@@ -272,9 +260,8 @@ nav a:not(:last-child) {
 
 footer {
   position: relative;
-  margin: 8rem auto 6.5rem auto;
-  width: 91%;
-  max-width: 1500px;
+  margin: 8rem var(--gutter) 6.5rem var(--gutter);
+  width: 100%;
   color: var(--darkgry);
 }
 
@@ -369,9 +356,10 @@ blockquote {
   position: relative;
 }
 
-/*#upjohn {
-  display: none;
-}*/
+#upjohn {
+  height: 100vh;
+  position: relative;
+}
 
 #companyContainer {
   margin-bottom: 12rem;
@@ -397,7 +385,8 @@ blockquote {
   position: absolute;
   writing-mode: vertical-lr;
   text-align: right;
-  transform: scale(-1, -1);
+  top: 20%;
+  transform: scale(-1, -1) translateX(47%);
 }
 
 #upjohn .col:nth-child(2) {
@@ -415,7 +404,7 @@ blockquote {
   padding-right: calc(var(--gutter) / 2);
 }
 
-#yellowdot {
+#yellowDot {
   width: 40%;
   flex-grow: 1;
   margin-right: calc(var(--gutter) / 2);
@@ -426,24 +415,28 @@ blockquote {
   display: flex;
   width: var(--widthSix);
   flex-wrap: wrap;
+  height: 80%;
   margin-left: auto;
 }
 
 #arm {
   width: 100%;
   margin-left: auto;
+  height: 33%;
 }
 
 #egg {
   width: var(--widthSix);
   margin-top: var(--gutter);
   padding-right: var(--gutter);
+  height: 19%;
 }
 
 #man {
   width: var(--widthTwo);
   margin-right: var(--gutter);
   margin-top: var(--gutter);
+  height: 10%;
 }
 
 /*
@@ -599,6 +592,7 @@ blockquote {
   display: flex;
   height: 50vh;
   flex-wrap: wrap;
+  margin-bottom: calc(10% + 120px);
   flex-direction: column;
 }
 
@@ -609,7 +603,10 @@ blockquote {
 #opera .col {
   display: flex;
   flex-direction: column;
-  /* margin-right: var(--gutter); */
+}
+
+#headingOpera h1:not(:first-of-type) {
+  font-size: clamp(1rem, calc(1rem + ((1vw - 0.35rem) * 2.3077)), 2.5rem);
 }
 
 #opera .col img,
@@ -668,6 +665,8 @@ blockquote {
 #quoteOpera {
   width: 100%;
   position: absolute;
+  margin-left: var(--gutter);
+  padding-right: var(--gutter);
   width: calc(100vw - var(--gutter));
   bottom: calc(-27% - var(--gutter));
   left: -50vw;
@@ -679,29 +678,29 @@ blockquote {
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 #red {
-  height: 15vh;
+  height: 35%;
 }
 
 #fish {
-  height: 24vh;
+  height: 57%;
 }
 
 #corn {
-  height: 34vh;
+  height: 34%;
 }
 
 #thankyou {
-  height: 17vh;
+  height: 46%;
 }
 
 #sofa {
   margin-left: var(--gutter);
   margin-bottom: var(--gutter);
-  height: 18%;
+  height: 46%;
 }
 
 #titleHerman {
@@ -722,14 +721,12 @@ blockquote {
 #herman .col:first-child {
   width: var(--widthFour);
   margin-right: var(--gutter);
-}
-
-#herman .col:first-child img {
-  height: auto;
+  height: 37%;
 }
 
 #herman .col:nth-child(2) {
   width: var(--widthFour);
+  height: 37%;
 }
 
 #corn {
@@ -749,9 +746,7 @@ blockquote {
 
 #visitSectionContainer > div {
   width: 91%;
-  max-width: 1850px;
-  max-width: 1850px;
-  margin: auto;
+  /* margin: auto; */
 }
 
 #visitHeading > *:not(em) {
@@ -813,7 +808,7 @@ blockquote {
   flex-grow: 1;
   /* width: var(--widthFour); */
   width: 60%;
-  height: 320px;
+  height: 350px;
   margin-right: var(--gutter);
 }
 
@@ -856,6 +851,10 @@ blockquote {
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-end;
+}
+
+#behindExhibit h1:last-of-type {
+  color: var(--darkgry);
 }
 
 #behindExhibit #brightformatAbout {
@@ -920,6 +919,14 @@ blockquote {
   width: 120px;
   display: block;
   height: 1.5px;
+}
+
+.quoteLine:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.quoteLine:last-child {
+  margin-top: 0.5rem;
 }
 
 /* #workPopup {
@@ -993,9 +1000,16 @@ blockquote {
 
 @media only screen and (min-width: 660px) {
   #quoteHeader {
-    width: calc((8.3% * 3) - 0.75rem);
-    max-width: 360px;
     color: white;
+  }
+
+  #quoteHeader .pullquote {
+    width: calc(var(--widthOne) + var(--gutter));
+    margin-left: calc(var(--gutter) + var(--widthOne));
+  }
+
+  #quoteHeader p {
+    width: var(--widthFour);
   }
 
   #topBar {
@@ -1022,6 +1036,7 @@ blockquote {
   nav {
     justify-content: flex-end;
     top: 0;
+    width: 100%;
     display: flex;
     margin: 0;
     align-items: flex-start;
@@ -1048,10 +1063,6 @@ blockquote {
     transform: translateY(50%);
   }
   header #headerVideo {
-    width: calc((8.3% * 10) - 0.75rem);
-    position: absolute;
-  }
-  header #headerVideo {
     height: 83%;
   }
   header #headerVideo video {
@@ -1071,7 +1082,7 @@ blockquote {
   /* Autocam Desktop Styles */
 
   #autocam {
-    height: 100vh;
+    height: 130vh;
     margin-left: var(--widthOne);
   }
 
@@ -1094,7 +1105,7 @@ blockquote {
   }
 
   #copper {
-    height: 30%;
+    height: 33%;
   }
 
   #factory {
@@ -1139,51 +1150,81 @@ blockquote {
 
   #upjohn {
     display: flex;
-    height: 100vh;
+    height: 130vh;
     flex-direction: row;
   }
 
   #titleUpjohn {
     width: var(--widthOne);
     position: relative;
-    margin-left: var(--widthOne);
+    top: unset;
+    align-self: center;
+    height: 80%;
+    /* margin-top: calc(40% + var(--gutter)); */
+    margin-left: calc(var(--widthOne) + var(--gutter));
     margin-right: var(--gutter);
   }
 
   #upjohn .col {
     display: flex;
-    height: 100%;
+    flex-grow: 1;
+    /* height: 100%; */
     flex-direction: column;
   }
 
   #upjohn .col:nth-child(2) {
     flex-direction: column;
+    height: 80%;
+    align-self: center;
+    width: var(--widthThree);
+    /* flex-wrap: wrap; */
+  }
+
+  #quoteUpjohn {
+    width: 100%;
+    width: var(--widthTwo);
+    padding-right: 0;
   }
 
   #clothespin {
-    height: 40%;
+    height: 30%;
+    margin-bottom: var(--gutter);
+    width: 100%;
+    flex-grow: unset;
+    padding: 0;
+    margin-left: 0;
   }
 
   #yellowDot {
-    height: 40%;
+    padding: 0;
+    height: 48%;
+    width: 100%;
+    flex-grow: unset;
+    margin-right: 0;
   }
 
   #upjohn .col:nth-child(3) {
     flex-direction: row !important;
+    width: var(--widthThree);
+    margin-left: var(--gutter);
+    height: 100%;
   }
 
   #arm {
-    height: 40%;
+    height: 55%;
     margin-top: 0;
+    margin-bottom: var(--gutter);
   }
 
   #egg {
-    height: 30%;
+    height: 40%;
     margin-top: 0;
+    padding: 0;
+    margin-right: var(--gutter);
   }
 
   #man {
-    height: 10%;
+    height: 16%;
     margin: 0;
   }
 
@@ -1194,7 +1235,7 @@ blockquote {
   }
 
   #opera .col {
-    height: unset !important;
+    /* height: unset !important; */
     flex-grow: 1;
   }
 
@@ -1204,18 +1245,35 @@ blockquote {
 
   #opera .col:nth-child(2) {
     width: var(--widthTwo);
+    padding: 0;
+    margin-bottom: 0;
     flex-direction: column;
-    height: 80% !important;
+    height: 89%;
   }
 
   #opera .col:nth-child(2) img {
     width: 100%;
-    height: auto;
   }
 
   #orange {
     width: 60%;
+    height: 30%;
     align-self: flex-end;
+  }
+
+  #yellow {
+    padding: 0;
+    height: 42%;
+  }
+
+  #green {
+    padding: 0;
+    height: 42%;
+    margin-bottom: 0;
+  }
+
+  #sword {
+    height: 24%;
   }
 
   #quoteOpera {
@@ -1224,7 +1282,7 @@ blockquote {
 
   #blue {
     margin-bottom: var(--gutter);
-    height: 40%;
+    height: 67%;
   }
 
   #opera .col:not(:last-child) {
@@ -1248,15 +1306,31 @@ blockquote {
     height: 100vh;
   }
 
+  #fish,
+  #red,
+  #sofa,
+  #thankyou {
+    height: unset;
+  }
+
+  #corn {
+    margin-bottom: 0 !important;
+    height: 72%;
+  }
+
+  #sofa {
+    margin-left: 0;
+  }
+
   #herman .col {
     flex-direction: column;
     flex-grow: 1;
     height: 80%;
   }
 
-  #herman img {
+  /* #herman img {
     height: 100%;
-  }
+  } */
 
   #herman .col:not(:last-child) {
     margin-right: var(--gutter);
@@ -1280,6 +1354,7 @@ blockquote {
   #herman .col:nth-child(2) {
     width: var(--widthTwo);
     align-self: flex-start;
+    height: 80%;
   }
 
   #herman .col:last-child {
@@ -1287,10 +1362,22 @@ blockquote {
     align-self: flex-end;
   }
 
+  #fish {
+    height: 52%;
+  }
+
+  #red {
+    height: 42%;
+  }
+
   /* French Desktop Styles */
 
   #french {
-    height: 100vh;
+    height: 130vh;
+  }
+
+  #titleFrench {
+    transform: translateX(-0.75rem);
   }
 
   #french .col {
@@ -1301,6 +1388,7 @@ blockquote {
     width: var(--widthThree);
     height: 100%;
     padding: 0;
+    align-self: flex-start;
     margin-right: var(--gutter);
     /* flex-grow: unset !important; */
   }
@@ -1308,6 +1396,7 @@ blockquote {
   #french .col:nth-child(2) {
     width: var(--widthTwo);
     height: 70%;
+    align-self: center;
     padding-top: var(--gutter);
     padding: 0;
     /* flex-grow: unset !important; */
@@ -1317,7 +1406,8 @@ blockquote {
     width: var(--widthThree);
     flex-direction: column;
     margin-left: 0;
-    height: 100%;
+    height: 74%;
+    align-self: flex-end;
     margin-right: 0;
     display: flex;
     justify-content: flex-end;
@@ -1327,19 +1417,21 @@ blockquote {
   #quoteFrench {
     /* width: var(--widthThree); */
     max-width: 330px;
+    margin-left: auto;
     margin-top: var(--gutter);
-    margin-left: var(--widthOne);
   }
 
   #queen {
     padding-left: 0;
-    width: var(--widthFour);
-    height: 33%;
+    width: calc(var(--widthFour) + var(--gutter));
+    height: 47%;
   }
 
   #jerry {
     height: 44%;
-    /* width: var(--widthTwo); */
+    margin: 0 0 var(--gutter) 0;
+    align-self: flex-end;
+    width: var(--widthFive);
   }
 
   #meat {
@@ -1348,13 +1440,13 @@ blockquote {
   }
 
   #scatter {
-    height: 31%;
+    height: 33%;
   }
 
   #dog {
     padding-right: 0;
     width: unset;
-    height: 33%;
+    height: 47%;
     margin-bottom: var(--gutter);
   }
 
@@ -1362,9 +1454,13 @@ blockquote {
     display: flex;
     margin-top: calc(10% + 100px);
     flex-wrap: wrap;
+    width: var(--widthSix);
     margin-left: auto;
     margin-right: auto;
+    /* margin-left: calc(var(--gutter) + var(--widthOne));
+    margin-right: calc(var(--gutter) + var(--widthOne)); */
   }
+
   #behindExhibit #behindExhibitHeadingContainer {
     align-items: flex-start;
     margin-top: 0;
@@ -1372,8 +1468,8 @@ blockquote {
     justify-content: flex-start;
     order: 0;
     margin-bottom: 0;
-    width: calc(8.3% - 0.75rem);
-    margin-right: 2rem;
+    width: var(--widthOne);
+    margin-right: var(--gutter);
     flex-direction: row;
   }
   #behindExhibit #brightformatAbout {
@@ -1383,8 +1479,8 @@ blockquote {
     max-width: 375px;
   }
   #behindExhibit #ferrisAbout {
-    width: 25%;
-    margin-right: 2%;
+    width: var(--widthTwo);
+    margin-right: var(--gutter);
     flex-grow: 1;
     max-width: 375px;
   }
@@ -1401,9 +1497,13 @@ blockquote {
     text-align: right;
   }
 
+  #visitSectionContainer > div {
+    width: unset;
+  }
+
   #behindExhibit #archivesAbout {
     width: 20%;
-    margin-right: 11%;
+    margin-right: var(--gutter);
     flex-grow: 1;
     display: flex;
     max-width: 355px;
@@ -1427,6 +1527,7 @@ blockquote {
 
   #visitSectionContainer #visitInfo {
     width: var(--widthSix);
+    margin: 0 auto;
   }
 
   #galleryName {
@@ -1443,6 +1544,8 @@ blockquote {
   }
 
   footer {
-    margin-top: 0%;
+    margin: 0 calc(var(--widthOne) + var(--gutter)) 3rem
+      calc(var(--widthOne) + var(--gutter));
+    width: unset;
   }
 }
