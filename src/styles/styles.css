@@ -377,23 +377,6 @@ blockquote {
   margin: 10% 0;
 }
 
-.workImageContainer {
-  overflow: hidden;
-}
-
-.workImageContainer img {
-  width: 100%;
-  height: auto;
-}
-
-/* #clothespin img {
-  width: var(--widthSix);
-}
-
-#yellowdot img {
-  width: var(--widthSix);
-} */
-
 #quoteUpjohn {
   width: var(--widthSix);
   margin-left: auto;
@@ -405,6 +388,8 @@ blockquote {
 #titleUpjohn {
   position: absolute;
   writing-mode: vertical-lr;
+  text-align: right;
+  transform: scale(-1, -1);
 }
 
 #upjohn .col:nth-child(2) {
@@ -1111,8 +1096,11 @@ blockquote {
     flex-direction: row;
   }
 
-  #titleUpjohn{
-    
+  #titleUpjohn {
+    width: var(--widthOne);
+    position: relative;
+    margin-left: var(--widthOne);
+    margin-right: var(--gutter);
   }
 
   #upjohn .col {
