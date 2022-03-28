@@ -897,6 +897,7 @@ blockquote {
   width: var(--widthSix);
   margin-top: 6rem;
   order: -1;
+  flex-wrap: nowrap;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
