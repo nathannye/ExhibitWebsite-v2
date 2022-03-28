@@ -392,7 +392,7 @@ blockquote {
 } */
 
 #companyContainer .companySection:not(#upjohn) h1:not(.ylw) {
-  color: var(--lightgry);
+  color: white;
 }
 
 .companySection {
@@ -419,9 +419,10 @@ blockquote {
   display: flex;
   align-self: center;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
   flex-wrap: wrap;
   align-items: flex-end;
+  margin-left: var(--gutter);
 }
 
 #clothespin {
@@ -442,28 +443,28 @@ blockquote {
   display: flex;
   width: var(--widthSix);
   flex-wrap: wrap;
-  height: 80%;
+  height: 56%;
   margin-left: auto;
 }
 
 #arm {
   width: 100%;
   margin-left: auto;
-  height: 33%;
+  height: 60%;
 }
 
 #egg {
   width: var(--widthSix);
   margin-top: var(--gutter);
   padding-right: var(--gutter);
-  height: 19%;
+  height: 40%;
 }
 
 #man {
   width: var(--widthTwo);
   margin-right: var(--gutter);
   margin-top: var(--gutter);
-  height: 10%;
+  height: 20%;
 }
 
 /*
