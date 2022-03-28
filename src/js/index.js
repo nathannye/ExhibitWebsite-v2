@@ -13,7 +13,6 @@ const colors = {
 };
 
 let imageContainers = gsap.utils.toArray("#companyContainer img");
-let newContainer = document.getElementById("workPopup");
 
 document.addEventListener("DOMContentLoaded", (event) => {
   imageContainers.forEach((e) => {
@@ -57,16 +56,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
     background: "#f9f9f9",
   });
 
-  gsap.to(navLinks, {
-    scrollTrigger: {
-      start: "top bottom",
-      end: "top bottom-=28%",
-      scrub: 0.25,
-      duration: 20,
-      trigger: startWhite,
-    },
-    color: "#211E1F",
-  });
+  // gsap.to(navLinks, {
+  //   scrollTrigger: {
+  //     start: "top bottom",
+  //     end: "top bottom-=28%",
+  //     scrub: 0.25,
+  //     duration: 20,
+  //     trigger: startWhite,
+  //   },
+  //   color: "#211E1F",
+  // });
 
   let headerQuote = document.querySelectorAll("#quoteHeader > *");
   // let tagline = document.getElementById("headerTagline");
