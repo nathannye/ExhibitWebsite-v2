@@ -105,6 +105,7 @@ header #headerTagline {
 #quoteHeader .pullquote {
   font-weight: 700;
   color: white;
+  letter-spacing: 0.07em;
   font-size: 14px;
   /* width: var(--widthTwo); */
   margin-bottom: 24px;
@@ -195,7 +196,8 @@ li em {
 p {
   font-size: 1rem;
   line-height: 1.4;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 
 a#toTopButton {
@@ -274,7 +276,7 @@ nav a:not(:last-child) {
 footer {
   position: relative;
   margin: 8rem var(--gutter) 6.5rem var(--gutter);
-  width: 100%;
+  /* width: 100%; */
   color: var(--darkgry);
 }
 
@@ -374,6 +376,10 @@ blockquote {
   position: relative;
 }
 
+#titleUpjohn h1:not(.ylw) {
+  font-size: clamp(1rem, calc(1rem + ((1vw - 0.35rem) * 2.3077)), 2.5rem);
+}
+
 #companyContainer {
   margin-bottom: 12rem;
 }
@@ -410,8 +416,9 @@ blockquote {
 
 #upjohn .col:nth-child(2) {
   display: flex;
+  align-self: center;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
   flex-wrap: wrap;
   align-items: flex-end;
 }
@@ -572,7 +579,7 @@ blockquote {
   width: 100%;
   flex-direction: row;
   margin-left: var(--gutter);
-  margin-right: var(--gutter);
+  /* margin-right: var(--gutter); */
 }
 
 #dog {
@@ -700,6 +707,11 @@ blockquote {
   height: 100vh;
 }
 
+#quoteHerman {
+  margin-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
 #red {
   height: 35%;
 }
@@ -710,6 +722,7 @@ blockquote {
 
 #corn {
   height: 34%;
+  padding-left: var(--gutter);
 }
 
 #thankyou {
@@ -724,6 +737,7 @@ blockquote {
 
 #titleHerman {
   display: flex;
+  margin-left: var(--gutter);
   margin-bottom: 1rem;
 }
 
@@ -738,13 +752,13 @@ blockquote {
 }
 
 #herman .col:first-child {
-  width: var(--widthFour);
-  margin-right: var(--gutter);
+  width: 50%;
+  padding-right: var(--gutter);
   height: 37%;
 }
 
 #herman .col:nth-child(2) {
-  width: var(--widthFour);
+  width: 50%;
   height: 37%;
 }
 
@@ -764,8 +778,11 @@ blockquote {
 }
 
 #visitSectionContainer > div {
-  width: 91%;
+  /* width: 91%; */
   /* margin: auto; */
+  /* width: 100%; */
+  margin-left: var(--gutter);
+  margin-right: var(--gutter);
 }
 
 #visitHeading > *:not(em) {
@@ -779,6 +796,10 @@ blockquote {
 }
 
 #visitInfo .col:first-child {
+  width: 100%;
+}
+
+#visitInfo .col {
   width: 100%;
 }
 
@@ -814,6 +835,7 @@ blockquote {
 
 #visitInfo .col:nth-child(2) > div:last-of-type {
   display: flex;
+  margin-top: var(--gutter);
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
@@ -826,9 +848,9 @@ blockquote {
 #galleryMap {
   flex-grow: 1;
   /* width: var(--widthFour); */
-  width: 60%;
+  width: 100%;
   height: 350px;
-  margin-right: var(--gutter);
+  /* margin-right: var(--gutter); */
 }
 
 #behindExhibit {
@@ -836,8 +858,8 @@ blockquote {
   margin-top: 10%;
   flex-wrap: wrap;
   width: 100%;
-  margin-left: var(--gutter);
-  margin-right: var(--gutter);
+  /* margin-left: var(--gutter);
+  margin-right: var(--gutter); */
 }
 
 #galleryName {
@@ -866,7 +888,7 @@ blockquote {
 #behindExhibit #behindExhibitHeadingContainer {
   align-self: flex-start;
   flex-grow: 1;
-  width: calc((8.3% * 6) - 0.75rem);
+  width: var(--widthSix);
   margin-top: 6rem;
   order: -1;
   display: flex;
@@ -921,6 +943,7 @@ blockquote {
   width: 20%;
   flex-grow: 1;
   min-width: 200px;
+  margin-bottom: calc(var(--gutter) * 2);
 }
 
 #behindExhibit #archivesAbout img {
@@ -1021,6 +1044,10 @@ blockquote {
 }
 
 @media only screen and (min-width: 660px) {
+  nav > span {
+    display: block;
+  }
+
   #quoteHeader {
     color: white;
     margin-left: calc(var(--widthOne) + var(--gutter));
@@ -1183,12 +1210,9 @@ blockquote {
     top: unset;
     align-self: center;
     height: 80%;
-    /* padding-bottom: 32%; */
     margin-right: var(--gutter);
     transform: translate(0) scale(-1, -1);
-    /* margin-top: calc(40% + var(--gutter)); */
     margin-left: calc(var(--widthOne) + var(--gutter));
-    /* margin-right: var(--gutter); */
   }
 
   #upjohn .col {
@@ -1200,15 +1224,18 @@ blockquote {
 
   #upjohn .col:nth-child(2) {
     flex-direction: column;
-    height: 80%;
-    align-self: center;
+    height: 100% !important;
+    flex-wrap: unset;
+    /* align-self: center; */
     width: var(--widthThree);
     /* flex-wrap: wrap; */
   }
 
   #quoteUpjohn {
-    width: 100%;
-    width: var(--widthTwo);
+    /* width: 100%; */
+    margin-left: calc(var(--gutter) + var(--widthOne));
+    /* width: var(--widthTwo); */
+    max-width: 330px;
     padding-right: 0;
   }
 
@@ -1377,6 +1404,7 @@ blockquote {
     width: var(--widthTwo);
     align-self: flex-end;
     height: 70%;
+    margin-right: 0;
   }
   #herman .col:first-child img {
     height: 100%;
@@ -1386,6 +1414,7 @@ blockquote {
     width: var(--widthTwo);
     align-self: flex-start;
     height: 80%;
+    margin-right: 0;
   }
 
   #herman .col:last-child {
@@ -1509,6 +1538,11 @@ blockquote {
     flex-grow: 1;
     max-width: 375px;
   }
+
+  #brightformatAbout p {
+    margin-top: 0;
+  }
+
   #behindExhibit #ferrisAbout {
     width: var(--widthTwo);
     margin-right: var(--gutter);
@@ -1554,6 +1588,15 @@ blockquote {
   #visitInfo {
     position: relative;
     /* margin-bottom: 230px; */
+  }
+
+  #visitInfo .col:nth-child(2) > div:last-of-type {
+    margin-top: 0;
+  }
+
+  #galleryMap {
+    width: var(--widthFive);
+    margin-right: var(--gutter);
   }
 
   #visitSectionContainer #visitInfo {
