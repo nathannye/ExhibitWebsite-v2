@@ -71,9 +71,10 @@ header {
 
 #quoteHeader {
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-left: var(--widthOne);
+  /* width: 100%; */
+  margin-right: var(--gutter);
+  flex-wrap: wrap-reverse;
+  margin-left: var(--gutter);
 }
 
 #quoteHeader p {
@@ -95,7 +96,7 @@ header #headerTagline {
 
 #quoteHeader p {
   color: white;
-  font-size: 24px;
+  font-size: clamp(1.14rem, calc(1.14rem + ((1vw - 0.35rem) * 0.8615)), 1.7rem);
   margin-top: 0;
   font-weight: 700;
   line-height: 1.6;
@@ -105,7 +106,7 @@ header #headerTagline {
   font-weight: 700;
   color: white;
   font-size: 14px;
-  width: var(--widthTwo);
+  /* width: var(--widthTwo); */
   margin-bottom: 24px;
 }
 
@@ -158,11 +159,12 @@ nav a {
   text-transform: uppercase;
 }
 
-nav span {
+nav > span {
   color: white;
   text-transform: uppercase;
   font-style: 18px;
   font-weight: 900;
+  display: none;
   letter-spacing: 0.1em;
 }
 
@@ -297,7 +299,7 @@ footer br {
 }
 
 footer p {
-  width: 100%;
+  /* width: 100%; */
   font-size: 0.85rem;
   max-width: 500px;
 }
@@ -598,11 +600,11 @@ blockquote {
 }
 
 #scatter {
-  height: 10vh;
+  height: 10%;
 }
 
 #meat {
-  height: 31vh;
+  height: 31%;
 }
 
 #opera {
@@ -833,6 +835,9 @@ blockquote {
   display: flex;
   margin-top: 10%;
   flex-wrap: wrap;
+  width: 100%;
+  margin-left: var(--gutter);
+  margin-right: var(--gutter);
 }
 
 #galleryName {
@@ -1018,10 +1023,12 @@ blockquote {
 @media only screen and (min-width: 660px) {
   #quoteHeader {
     color: white;
+    margin-left: calc(var(--widthOne) + var(--gutter));
   }
 
   #quoteHeader .pullquote {
     width: calc(var(--widthOne) + var(--gutter));
+    min-width: 210px;
     margin-left: calc(var(--gutter) + var(--widthOne));
   }
 
@@ -1270,13 +1277,17 @@ blockquote {
     height: 89%;
   }
 
+  #opera .col:last-child {
+    height: 100%;
+  }
+
   #opera .col:nth-child(2) img {
     width: 100%;
   }
 
   #orange {
     width: 60%;
-    height: 30%;
+    height: 42%;
     align-self: flex-end;
   }
 
@@ -1315,8 +1326,9 @@ blockquote {
   #quoteOpera {
     position: relative;
     bottom: unset;
+    margin-left: 0;
     margin-top: var(--gutter);
-    width: var(--widthThree);
+    width: var(--widthFour);
     left: unset;
   }
 

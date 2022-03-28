@@ -66,8 +66,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   let headerQuote = document.querySelectorAll("#quoteHeader > *");
   // let tagline = document.getElementById("headerTagline");
-  let para = document.querySelector("#quoteHeader p");
+  // let para = document.querySelector("#quoteHeader p");
   let vid = document.querySelector("video");
+  let title = document.querySelector("nav > span, #topBar");
   vid.volume = 0;
   let navElements = gsap.utils.toArray("nav a");
   let introAnim = gsap.timeline({
@@ -102,6 +103,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
         clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0 100%)",
         ease: "power4.inOut",
         duration: 1.1,
+      },
+      0
+    )
+    .from(
+      title,
+      {
+        y: -10,
+        autoAlpha: 0,
+        ease: "power3.inOut",
+        duration: 0.5,
       },
       0
     )
