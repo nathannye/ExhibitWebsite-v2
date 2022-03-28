@@ -401,17 +401,19 @@ blockquote {
 
 #quoteUpjohn {
   width: var(--widthSix);
-  margin-left: auto;
+  margin-left: 23%;
   padding-right: var(--gutter);
   margin-top: var(--gutter);
   margin-bottom: var(--gutter);
 }
 
+
+
 #titleUpjohn {
   position: absolute;
   writing-mode: vertical-lr;
   text-align: right;
-  top: 20%;
+  top: 18.75%;
   transform: scale(-1, -1) translateX(47%);
 }
 
@@ -423,6 +425,7 @@ blockquote {
   flex-wrap: wrap;
   align-items: flex-end;
   margin-left: var(--gutter);
+  padding-right: 6.6%;
 }
 
 #clothespin {
@@ -443,7 +446,7 @@ blockquote {
   display: flex;
   width: var(--widthSix);
   flex-wrap: wrap;
-  height: 56%;
+  height: 50%;
   margin-left: auto;
 }
 
@@ -682,6 +685,7 @@ blockquote {
 
 #orange {
   margin-left: var(--gutter);
+  margin-top: 10px;
 }
 
 #opera .col:first-child {
@@ -699,7 +703,7 @@ blockquote {
   margin-left: var(--gutter);
   padding-right: var(--gutter);
   width: calc(100vw - var(--gutter));
-  bottom: calc(-27% - var(--gutter));
+  bottom: calc(-34% - var(--gutter));
   left: -50vw;
 }
 
@@ -884,7 +888,7 @@ blockquote {
 
 #galleryName blockquote {
   color: var(--darkgry);
-  font-weight: 900;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -1220,6 +1224,7 @@ blockquote {
     margin-right: var(--gutter);
     transform: translate(0) scale(-1, -1);
     margin-left: calc(var(--widthOne) + var(--gutter));
+    margin-top:430px;
   }
 
   #upjohn .col {
@@ -1235,12 +1240,13 @@ blockquote {
     flex-wrap: unset;
     /* align-self: center; */
     width: var(--widthThree);
+    padding-right: 0;
     /* flex-wrap: wrap; */
   }
 
   #quoteUpjohn {
     /* width: 100%; */
-    margin-left: calc(var(--gutter) + var(--widthOne));
+     margin-left: calc(var(--gutter) + var(--width));
     /* width: var(--widthTwo); */
     /*max-width: 330px;*/
     padding-right: 0;
@@ -1362,8 +1368,9 @@ blockquote {
     bottom: unset;
     margin-left: 0;
     margin-top: var(--gutter);
-    width: var(--widthFour);
+    width: var(--widthSix);
     left: unset;
+    padding-right: 0;
   }
 
   /* Herman Desktop Styles */
@@ -1404,7 +1411,8 @@ blockquote {
   #quoteHerman {
     width: 50%;
     margin-top: 1rem;
-    max-width: 330px;
+    max-width: var(--widthSix);
+    padding-right:0;
   }
 
   #herman .col:first-child {
