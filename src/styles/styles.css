@@ -407,8 +407,6 @@ blockquote {
   margin-bottom: var(--gutter);
 }
 
-
-
 #titleUpjohn {
   position: absolute;
   writing-mode: vertical-lr;
@@ -889,7 +887,7 @@ blockquote {
 #galleryName blockquote {
   color: var(--darkgry);
   font-weight: 700;
-  font-size: 18px;
+  font-size: clamp(1rem, calc(1rem + ((1vw - 0.35rem) * 0.4308)), 1.28rem);
   line-height: 1.4;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -1224,7 +1222,7 @@ blockquote {
     margin-right: var(--gutter);
     transform: translate(0) scale(-1, -1);
     margin-left: calc(var(--widthOne) + var(--gutter));
-    margin-top:430px;
+    margin-top: 430px;
   }
 
   #upjohn .col {
@@ -1246,7 +1244,7 @@ blockquote {
 
   #quoteUpjohn {
     /* width: 100%; */
-     margin-left: calc(var(--gutter) + var(--width));
+    margin-left: calc(var(--gutter) + var(--width));
     /* width: var(--widthTwo); */
     /*max-width: 330px;*/
     padding-right: 0;
@@ -1412,7 +1410,7 @@ blockquote {
     width: 50%;
     margin-top: 1rem;
     max-width: var(--widthSix);
-    padding-right:0;
+    padding-right: 0;
   }
 
   #herman .col:first-child {
