@@ -401,11 +401,13 @@ blockquote {
 
 #quoteUpjohn {
   width: var(--widthSix);
-  margin-left: auto;
+  margin-left: 23%;
   padding-right: var(--gutter);
   margin-top: var(--gutter);
   margin-bottom: var(--gutter);
 }
+
+
 
 #titleUpjohn {
   position: absolute;
@@ -423,6 +425,7 @@ blockquote {
   flex-wrap: wrap;
   align-items: flex-end;
   margin-left: var(--gutter);
+  padding-right: 6.6%;
 }
 
 #clothespin {
@@ -1235,7 +1238,7 @@ blockquote {
 
   #quoteUpjohn {
     /* width: 100%; */
-    margin-left: calc(var(--gutter) + var(--widthOne));
+     margin-left: calc(var(--gutter) + var(--width));
     /* width: var(--widthTwo); */
     /*max-width: 330px;*/
     padding-right: 0;
