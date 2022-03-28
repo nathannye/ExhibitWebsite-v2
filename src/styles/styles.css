@@ -413,7 +413,7 @@ blockquote {
   position: absolute;
   writing-mode: vertical-lr;
   text-align: right;
-  top: 20%;
+  top: 18.75%;
   transform: scale(-1, -1) translateX(47%);
 }
 
@@ -682,6 +682,7 @@ blockquote {
 
 #orange {
   margin-left: var(--gutter);
+  margin-top: 10px;
 }
 
 #opera .col:first-child {
@@ -699,7 +700,7 @@ blockquote {
   margin-left: var(--gutter);
   padding-right: var(--gutter);
   width: calc(100vw - var(--gutter));
-  bottom: calc(-27% - var(--gutter));
+  bottom: calc(-34% - var(--gutter));
   left: -50vw;
 }
 
@@ -1218,6 +1219,7 @@ blockquote {
     margin-right: var(--gutter);
     transform: translate(0) scale(-1, -1);
     margin-left: calc(var(--widthOne) + var(--gutter));
+    margin-top:430px;
   }
 
   #upjohn .col {
@@ -1233,6 +1235,7 @@ blockquote {
     flex-wrap: unset;
     /* align-self: center; */
     width: var(--widthThree);
+    padding-right: 0;
     /* flex-wrap: wrap; */
   }
 
@@ -1360,8 +1363,9 @@ blockquote {
     bottom: unset;
     margin-left: 0;
     margin-top: var(--gutter);
-    width: var(--widthFour);
+    width: var(--widthSix);
     left: unset;
+    padding-right: 0;
   }
 
   /* Herman Desktop Styles */
