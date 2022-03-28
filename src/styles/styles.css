@@ -1406,7 +1406,8 @@ blockquote {
   #quoteHerman {
     width: 50%;
     margin-top: 1rem;
-    max-width: 330px;
+    max-width: var(--widthSix);
+    padding-right:0;
   }
 
   #herman .col:first-child {
