@@ -1,3 +1,7 @@
+import { gsap } from "gsap/all";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import SplitText from "gsap/SplitText";
+
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const colors = {
@@ -29,7 +33,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       {
         autoAlpha: 0,
         clipPath: "polygon(0% 20%, 100% 20%, 100% 100%, 0% 100%)",
-        yPercent: -10,
+        yPercent: 10,
         // transformOrigin: "center bottom",
         duration: 1.2,
         ease: "power3.inOut",

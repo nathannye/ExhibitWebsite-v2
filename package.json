@@ -5,5 +5,9 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build"
+  },
+  "dependencies": {
+    "gsap": "npm:@gsap/shockingly@^3.9.1",
+    "mapbox-gl": "^2.7.1"
   }
 }

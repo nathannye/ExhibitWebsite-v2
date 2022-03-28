@@ -1,3 +1,5 @@
+import mapboxgl from "mapbox-gl";
+
 let container = document.getElementById("galleryMap");
 // let markerAdd = document.getElementById("mapMarker");
 
@@ -24,10 +26,16 @@ map.addControl(nav, "bottom-right");
 // map.setLngLat([-85.47859669797005, 43.68930899669416]);
 map.addTo(map);
 
-const marker = new mapboxgl.Marker({})
+const marker = new mapboxgl.Marker()
   .setLngLat([-85.47859669797005, 43.68930899669416])
   .addTo(map);
 
+// const marker = new mapboxgl.Marker({
+//   color: "red",
+//   draggable: false,
+// })
+//   .setLngLat([-85.47859669797005, 43.68930899669416])
+//   .addTo(map);
 // const marker = new mapboxgl.Marker({
 //   color: colors.ylw,
 //   anchor: "center",
