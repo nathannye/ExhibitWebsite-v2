@@ -12,6 +12,7 @@ html {
   --power3: 0.24s cubic-bezier(0.84, 0, 0.15, 1) all;
   --linear: 0.2s ease-in-out all;
   --unit: 12.5%;
+  overflow-x: hidden;
   --gutter: clamp(1rem, calc(1rem + ((1vw - 0.285rem) * 2.7972)), 3rem);
   --widthOne: calc((var(--unit) * 1) - var(--gutter));
   --widthTwo: calc((var(--unit) * 2) - var(--gutter));
