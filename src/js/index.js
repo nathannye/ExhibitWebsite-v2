@@ -8,7 +8,7 @@ const colors = {
   white: "#fff",
 };
 
-let imageContainers = gsap.utils.toArray(".workImageContainer");
+let imageContainers = gsap.utils.toArray("#companyContainer img");
 let newContainer = document.getElementById("workPopup");
 
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     e.tl = gsap.timeline({
       scrollTrigger: {
-        start: "top bottom-=5%",
+        start: "top bottom-=2%",
         trigger: e,
       },
     });
@@ -28,11 +28,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       e,
       {
         autoAlpha: 0,
-        clipPath: "polygon(0% 40%, 100% 40%, 100% 100%, 0% 100%)",
-        rotateX: 40,
-        yPercent: 5,
-        transformOrigin: "center bottom",
-        duration: 1.1,
+        clipPath: "polygon(0% 20%, 100% 20%, 100% 100%, 0% 100%)",
+        yPercent: -10,
+        // transformOrigin: "center bottom",
+        duration: 1.2,
         ease: "power3.inOut",
       },
       0
@@ -41,7 +40,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   let startWhite = document.getElementById("visitSectionContainer");
   let html = document.querySelector("html");
-  let navLinks = document.querySelectorAll("nav > a");
+  let navLinks = document.querySelectorAll("nav a");
 
   gsap.to(html, {
     scrollTrigger: {
@@ -66,18 +65,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   let headerQuote = document.querySelectorAll("#quoteHeader > *");
-  let tagline = document.getElementById("headerTagline");
+  // let tagline = document.getElementById("headerTagline");
   let para = document.querySelector("#quoteHeader p");
   let vid = document.querySelector("video");
   vid.volume = 0;
-  let navElements = gsap.utils.toArray("nav > a");
+  let navElements = gsap.utils.toArray("nav a");
   let introAnim = gsap.timeline({
     paused: true,
   });
-  tagline.split = new SplitText(tagline, {
-    type: "lines, words",
-    linesClass: "splitLine",
-  });
+  // tagline.split = new SplitText(tagline, {
+  //   type: "lines, words",
+  //   linesClass: "splitLine",
+  // });
 
   gsap.set(vid, {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
@@ -107,17 +106,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
       0
     )
 
-    .from(
-      tagline.split.words,
-      {
-        yPercent: 100,
-        rotateX: 90,
-        duration: 2,
-        stagger: 0.065,
-        ease: "power3.inOut",
-      },
-      0.5
-    )
+    // .from(
+    //   tagline.split.words,
+    //   {
+    //     yPercent: 100,
+    //     rotateX: 90,
+    //     duration: 2,
+    //     stagger: 0.065,
+    //     ease: "power3.inOut",
+    //   },
+    //   0.5
+    // )
     .from(
       headerQuote,
       {
@@ -155,7 +154,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }, 0);
 });
 
-let h1 = gsap.utils.toArray(".companyHeadingContainer h1");
+let h1 = gsap.utils.toArray(".companySection h1");
 
 function setuph1() {
   h1.forEach((e) => {
@@ -177,8 +176,8 @@ function setuph1() {
       duration: 2,
       ease: "power3.inOut",
       // autoAlpha: 0,s
-      stagger: 1,
-      rotateX: 90,
+      stagger: 0.26,
+      rotateX: 40,
       yPercent: 100,
     });
   });
@@ -189,7 +188,7 @@ setuph1();
 
 // Nav hover animation
 
-let links = gsap.utils.toArray("nav > a");
+let links = gsap.utils.toArray("nav a");
 const linkName = ["plan a visit", "behind the exhibit"];
 
 for (let i = 0; i < links.length; i++) {

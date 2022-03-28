@@ -25,7 +25,6 @@ html {
   font-family: "Lato", Tahoma, sans-serif;
   font-size: 87.5%;
   font-kerning: normal;
-  margin-top: 5rem;
   background: var(--deepBlack);
   scroll-behavior: smooth;
 }
@@ -42,14 +41,14 @@ h1 {
   transform-origin: "center bottom";
 }
 
-h1 div {
-  perspective: 200px;
+h1 * {
+  perspective: 500px;
   backface-visibility: visible;
   transform-style: preserve-3d;
 }
 
 h1 {
-  perspective: 200px;
+  perspective: 500px;
   backface-visibility: visible;
   transform-style: preserve-3d;
 }
@@ -151,7 +150,7 @@ h2 {
 }
 
 h3,
-nav > a {
+nav a {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.4;
@@ -159,11 +158,23 @@ nav > a {
   text-transform: uppercase;
 }
 
+nav span {
+  color: white;
+  text-transform: uppercase;
+  font-style: 18px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+#navLinks {
+  display: flex;
+}
+
 img {
   object-fit: cover;
 }
 
-nav > a {
+nav a {
   font-size: 11px;
   letter-spacing: 0.06em;
 }
@@ -218,7 +229,7 @@ nav {
   bottom: 0;
   margin: auto;
   left: 0;
-  padding: 1.5rem 4.9%;
+  padding: 1.5rem var(--gutter);
 }
 
 nav a {
@@ -364,6 +375,12 @@ blockquote {
 #companyContainer {
   margin-bottom: 12rem;
 }
+
+/* #companyContainer img {
+  perspective: 200px;
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+} */
 
 #companyContainer .companySection:not(#upjohn) h1:not(.ylw) {
   color: var(--lightgry);
@@ -1034,15 +1051,14 @@ blockquote {
   }
 
   nav {
-    justify-content: flex-end;
+    justify-content: space-between;
     top: 0;
     width: 100%;
     display: flex;
     margin: 0;
-    align-items: flex-start;
-    height: 30px;
+    align-items: center;
+    height: 60px;
     left: 0;
-    padding: 1.5rem 4.9% 1.5rem 0;
   }
 
   header {
