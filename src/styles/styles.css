@@ -446,7 +446,7 @@ blockquote {
   display: flex;
   width: var(--widthSix);
   flex-wrap: wrap;
-  height: 56%;
+  height: 50%;
   margin-left: auto;
 }
 
