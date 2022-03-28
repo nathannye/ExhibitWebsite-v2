@@ -1235,7 +1235,7 @@ blockquote {
     /* width: 100%; */
     margin-left: calc(var(--gutter) + var(--widthOne));
     /* width: var(--widthTwo); */
-    max-width: 330px;
+    /*max-width: 330px;*/
     padding-right: 0;
   }
 
