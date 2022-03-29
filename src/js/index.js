@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       end: "top bottom-=37%",
       scrub: 0.25,
       duration: 20,
-      markers: true,
+
       trigger: startWhite,
     },
   });
