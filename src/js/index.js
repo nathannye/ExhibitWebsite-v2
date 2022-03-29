@@ -159,7 +159,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         duration: 1,
         autoAlpha: 0,
         ease: "power3.inOut",
-        // clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       },
       0
     )
@@ -168,7 +167,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }, 0);
 });
 
-let h1 = gsap.utils.toArray(".companySection h1");
+let h1 = gsap.utils.toArray(
+  ".companySection h1, #behindExhibitHeadingContainer h1, #visitHeading h1"
+);
 
 function setuph1() {
   h1.forEach((e) => {

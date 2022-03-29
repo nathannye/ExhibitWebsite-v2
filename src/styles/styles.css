@@ -12,7 +12,6 @@ html {
   --power3: 0.24s cubic-bezier(0.84, 0, 0.15, 1) all;
   --linear: 0.2s ease-in-out all;
   --unit: 12.5%;
-  overflow-x: hidden;
   --gutter: clamp(1rem, calc(1rem + ((1vw - 0.285rem) * 2.7972)), 3rem);
   --widthOne: calc((var(--unit) * 1) - var(--gutter));
   --widthTwo: calc((var(--unit) * 2) - var(--gutter));
@@ -22,11 +21,10 @@ html {
   --widthSix: calc(var(--unit) * 6);
   --widthSeven: calc(var(--unit) * 7);
   --widthEight: calc(var(--unit) * 8);
-  --marginMobile: 25px;
-
   font-family: "Lato", Tahoma, sans-serif;
   font-size: 87.5%;
   font-kerning: normal;
+  overflow-x: hidden;
   background: var(--deepBlack);
   scroll-behavior: smooth;
 }
@@ -1059,12 +1057,12 @@ blockquote {
 }
 
 @media only screen and (min-width: 660px) {
-  nav > span {
-    display: block;
+  .companyDescription {
+    max-width: 330px;
   }
 
-  html {
-    --marginMobile: 0px;
+  nav > span {
+    display: block;
   }
 
   #quoteHeader {
@@ -1188,7 +1186,6 @@ blockquote {
   #quoteAutocam {
     /* width: var(--widthThree); */
     width: 100%;
-    max-width: 330px;
   }
 
   #apple {
@@ -1254,9 +1251,11 @@ blockquote {
 
   #quoteUpjohn {
     /* width: 100%; */
-    margin-left: calc(var(--gutter) + var(--width));
+    margin-left: auto;
     /* width: var(--widthTwo); */
     /*max-width: 330px;*/
+    transform: none;
+    margin-bottom: 0;
     padding-right: 0;
   }
 
@@ -1500,7 +1499,6 @@ blockquote {
 
   #quoteFrench {
     /* width: var(--widthThree); */
-    max-width: 330px;
     margin-left: auto;
     margin-top: var(--gutter);
   }
@@ -1607,6 +1605,10 @@ blockquote {
   }
   #visitSectionContainer {
     margin-top: 36rem;
+  }
+
+  #visitInfo .col:nth-child(2) {
+    flex-wrap: nowrap;
   }
 
   #visitInfo {
