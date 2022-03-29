@@ -2,10 +2,6 @@ import { gsap } from "gsap/all";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitText from "gsap/SplitText";
 import Lottie from "lottie-web";
-import * as smoothscroll from "smoothscroll-polyfill";
-
-smoothscroll.polyfill();
-
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const colors = {
