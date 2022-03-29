@@ -98,7 +98,11 @@ header #headerTagline {
 
 #quoteHeader p {
   color: white;
-  font-size: clamp(1.14rem, calc(1.14rem + ((1vw - 0.35rem) * 0.8615)), 1.42rem);
+  font-size: clamp(
+    1.14rem,
+    calc(1.14rem + ((1vw - 0.35rem) * 0.8615)),
+    1.42rem
+  );
   margin-top: 0;
   font-weight: 700;
   line-height: 1.6;
@@ -402,11 +406,11 @@ blockquote {
 
 #quoteUpjohn {
   width: var(--widthSix);
-  margin-left: calc(var(--gutter)  + var(--gutter) + var(--widthTwo));
+  margin-left: calc(var(--gutter) + var(--gutter) + var(--widthTwo));
   padding-right: var(--gutter);
   margin-top: var(--gutter);
   margin-bottom: var(--gutter);
-  transform: translateX(calc(var(--gutter) * -.5));
+  transform: translateX(calc(var(--gutter) * -0.5));
 }
 
 #titleUpjohn {
@@ -450,7 +454,7 @@ blockquote {
   width: var(--widthSix);
   flex-wrap: wrap;
   height: 50%;
-  margin-left: calc(var(--gutter)  + var(--gutter) + var(--widthTwo));
+  margin-left: calc(var(--gutter) + var(--gutter) + var(--widthTwo));
 }
 
 #arm {
@@ -521,8 +525,8 @@ blockquote {
   margin-bottom: 1rem;
 }
 
-#quoteAutocam{
-  padding-right:var(--gutter);
+#quoteAutocam {
+  padding-right: var(--gutter);
 }
 
 #factory {
@@ -726,7 +730,7 @@ blockquote {
 
 #quoteHerman {
   margin-left: var(--gutter);
-  width:100%;
+  width: 100%;
   padding-right: var(--gutter);
 }
 
@@ -877,8 +881,6 @@ blockquote {
   margin-top: 10%;
   flex-wrap: wrap;
   width: 100%;
-  /* margin-left: var(--gutter);
-  margin-right: var(--gutter); */
 }
 
 #galleryName {
@@ -1068,9 +1070,9 @@ blockquote {
     display: block;
   }
 
-html {
-  --marginMobile: 0px;
-}
+  html {
+    --marginMobile: 0px;
+  }
 
   #quoteHeader {
     color: white;
