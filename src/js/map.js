@@ -14,20 +14,6 @@ window.onload = () => {
   });
 
   map.scrollZoom.disable();
-
-  // const attr = new mapboxgl.AttributionControl({
-  //   customAttribution: "",
-  // });
-
-  // const nav = new mapboxgl.NavigationControl({
-  //   anchor: "bottom-right",
-  //   showCompass: false,
-  // });
-
-  // map
-  //   .addControl(nav, "bottom-right")
-  //   .setLngLat([-85.47859669797005, 43.68930899669416]);
-  // // .addTo(map);
 };
 
 // const marker = new mapboxgl.Marker()

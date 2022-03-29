@@ -107,6 +107,13 @@ header #headerTagline {
   top: 4.65%;
 }
 
+a.scrollLink {
+  position: absolute;
+  top: -130px;
+  left: 0;
+  opacity: 0;
+}
+
 #quoteHeader p {
   color: white;
   font-size: clamp(
@@ -735,6 +742,7 @@ blockquote {
 
 #herman {
   flex-direction: row;
+  position: relative;
   flex-wrap: wrap;
   display: flex;
   height: 100vh;
@@ -810,6 +818,7 @@ blockquote {
 #visitSectionContainer {
   margin: auto;
   display: flex;
+  position: relative;
   flex-direction: column;
   color: var(--darkgry);
 }
@@ -894,6 +903,7 @@ blockquote {
   display: flex;
   margin-top: 10%;
   flex-wrap: wrap;
+  position: relative;
   width: 100%;
 }
 
