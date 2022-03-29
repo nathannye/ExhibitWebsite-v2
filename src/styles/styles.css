@@ -672,7 +672,6 @@ blockquote {
   font-size: clamp(1rem, calc(1rem + ((1vw - 0.35rem) * 2.3077)), 2.5rem);
 }
 
-#opera .col img,
 #quoteOpera,
 #headingOpera {
   margin-bottom: var(--gutter);
@@ -684,7 +683,10 @@ blockquote {
 }
 
 #sword {
-  height: 15vh;
+  height: 21%;
+  margin-bottom: 0;
+  flex-grow: 1;
+  padding-bottom: var(--gutter);
 }
 
 #opera .col:nth-child(2) {
@@ -714,6 +716,7 @@ blockquote {
 #orange {
   margin-left: var(--gutter);
   margin-top: 10px;
+  margin-bottom: var(--gutter);
   height: 47%;
 }
 
