@@ -56,10 +56,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   let colorChange = gsap.timeline({
     scrollTrigger: {
-      start: "top bottom+=38%",
-      end: "top bottom-=4%",
+      start: "top bottom-=10%",
+      end: "top bottom-=37%",
       scrub: 0.25,
       duration: 20,
+      markers: true,
       trigger: startWhite,
     },
   });
@@ -74,6 +75,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     )
     .to(
       title,
+      {
+        color: colors.black,
+      },
+      0
+    )
+    .to(
+      "#quoteFrench",
       {
         color: colors.black,
       },
