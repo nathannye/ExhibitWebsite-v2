@@ -406,6 +406,7 @@ blockquote {
 
 #companyContainer {
   margin-bottom: 12rem;
+  position: relative;
 }
 
 /* #companyContainer img {
@@ -742,7 +743,6 @@ blockquote {
 
 #herman {
   flex-direction: row;
-  position: relative;
   flex-wrap: wrap;
   display: flex;
   height: 100vh;

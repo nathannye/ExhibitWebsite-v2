@@ -5,6 +5,10 @@ import Lottie from "lottie-web";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
+
+
+
+
 const colors = {
   ylw: "#FABC13",
   black: "#211E1F",
