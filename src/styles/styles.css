@@ -22,6 +22,7 @@ html {
   --widthSix: calc(var(--unit) * 6);
   --widthSeven: calc(var(--unit) * 7);
   --widthEight: calc(var(--unit) * 8);
+  --marginMobile: 25px;
 
   font-family: "Lato", Tahoma, sans-serif;
   font-size: 87.5%;
@@ -97,7 +98,7 @@ header #headerTagline {
 
 #quoteHeader p {
   color: white;
-  font-size: clamp(1.14rem, calc(1.14rem + ((1vw - 0.35rem) * 0.8615)), 1.7rem);
+  font-size: clamp(1.14rem, calc(1.14rem + ((1vw - 0.35rem) * 0.8615)), 1.42rem);
   margin-top: 0;
   font-weight: 700;
   line-height: 1.6;
@@ -396,22 +397,23 @@ blockquote {
 }
 
 .companySection {
-  margin: 10% 0;
+  margin: 7rem 0;
 }
 
 #quoteUpjohn {
   width: var(--widthSix);
-  margin-left: 23%;
+  margin-left: calc(var(--gutter)  + var(--gutter) + var(--widthTwo));
   padding-right: var(--gutter);
   margin-top: var(--gutter);
   margin-bottom: var(--gutter);
+  transform: translateX(calc(var(--gutter) * -.5));
 }
 
 #titleUpjohn {
   position: absolute;
   writing-mode: vertical-lr;
   text-align: right;
-  top: 18.75%;
+  top: calc(20% + var(--gutter));
   transform: scale(-1, -1) translateX(47%);
 }
 
@@ -424,6 +426,7 @@ blockquote {
   align-items: flex-end;
   margin-left: var(--gutter);
   padding-right: 6.6%;
+  height: 42%;
 }
 
 #clothespin {
@@ -431,6 +434,7 @@ blockquote {
   flex-grow: 1;
   margin-left: calc(var(--gutter) / 2);
   padding-right: calc(var(--gutter) / 2);
+  height: 25%;
 }
 
 #yellowDot {
@@ -438,6 +442,7 @@ blockquote {
   flex-grow: 1;
   margin-right: calc(var(--gutter) / 2);
   padding-left: calc(var(--gutter) / 2);
+  height: 40%;
 }
 
 #upjohn .col:nth-child(3) {
@@ -445,7 +450,7 @@ blockquote {
   width: var(--widthSix);
   flex-wrap: wrap;
   height: 50%;
-  margin-left: auto;
+  margin-left: calc(var(--gutter)  + var(--gutter) + var(--widthTwo));
 }
 
 #arm {
@@ -458,7 +463,7 @@ blockquote {
   width: var(--widthSix);
   margin-top: var(--gutter);
   padding-right: var(--gutter);
-  height: 40%;
+  height: 35%;
 }
 
 #man {
@@ -516,6 +521,10 @@ blockquote {
   margin-bottom: 1rem;
 }
 
+#quoteAutocam{
+  padding-right:var(--gutter);
+}
+
 #factory {
   height: 11vh;
   margin-bottom: var(--gutter);
@@ -543,7 +552,7 @@ blockquote {
 #autocam .col:nth-child(3) {
   width: 75%;
   margin-top: var(--gutter);
-  margin-left: auto;
+  margin-left: calc(var(--gutter) + var(--gutter) + var(--widthTwo));
 }
 
 #french {
@@ -635,6 +644,7 @@ blockquote {
 #opera .col {
   display: flex;
   flex-direction: column;
+  height: 50%;
 }
 
 #headingOpera h1:not(:first-of-type) {
@@ -716,7 +726,8 @@ blockquote {
 
 #quoteHerman {
   margin-left: var(--gutter);
-  margin-right: var(--gutter);
+  width:100%;
+  padding-right: var(--gutter);
 }
 
 #red {
@@ -1056,6 +1067,10 @@ blockquote {
   nav > span {
     display: block;
   }
+
+html {
+  --marginMobile: 0px;
+}
 
   #quoteHeader {
     color: white;
