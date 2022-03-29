@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         autoAlpha: 0,
         duration: 0.45,
         yPercent: -35,
+        delay: 0.24,
       },
       0
     )
@@ -131,7 +132,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       {
         clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0 100%)",
         ease: "power4.inOut",
-        duration: 1.1,
+        duration: 1.34,
       },
       0
     )
@@ -145,18 +146,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
       },
       0
     )
-
-    // .from(
-    //   tagline.split.words,
-    //   {
-    //     yPercent: 100,
-    //     rotateX: 90,
-    //     duration: 2,
-    //     stagger: 0.065,
-    //     ease: "power3.inOut",
-    //   },
-    //   0.5
-    // )
+    .from(
+      "#headerMark",
+      {
+        autoAlpha: 0,
+        duration: 0.45,
+        yPercent: -35,
+      },
+      0
+    )
     .from(
       headerQuote,
       {
