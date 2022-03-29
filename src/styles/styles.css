@@ -749,6 +749,7 @@ blockquote {
   flex-wrap: wrap;
   display: flex;
   height: 100vh;
+  min-height: 800px;
 }
 
 #quoteHerman {
@@ -1425,7 +1426,7 @@ blockquote {
   /* Herman Desktop Styles */
   #herman {
     height: 100vh;
-    min-height: 800px;
+    /* min-height: 800px; */
   }
 
   #fish,
@@ -1437,7 +1438,7 @@ blockquote {
 
   #corn {
     margin-bottom: 0 !important;
-    height: 72%;
+    /* height: 72%; */
   }
 
   #sofa {
@@ -1487,6 +1488,7 @@ blockquote {
   #herman .col:last-child {
     width: var(--widthFour);
     align-self: flex-end;
+    height: 84%;
   }
 
   #fish {
