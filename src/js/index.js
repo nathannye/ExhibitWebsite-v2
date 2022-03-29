@@ -9,7 +9,7 @@ const colors = {
   black: "#211E1F",
   lgry: "#e6e7e8",
   mgrey: "#939598",
-  white: "#fff",
+  white: "#f9f9f9",
 };
 
 let imageContainers = gsap.utils.toArray("#companyContainer img");
@@ -41,11 +41,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
     );
   });
 
+  let headerQuote = document.querySelectorAll("#quoteHeader > *");
+  let vid = document.querySelector("video");
+  let title = document.querySelector("#headerMark, #topBar");
+  console.log(title);
+  let navSwap = gsap.utils.toArray("nav, #topBar");
+  let navText = gsap.utils.toArray(".navSplit");
+  vid.volume = 0;
+  let navElements = gsap.utils.toArray("nav a");
   let startWhite = document.getElementById("visitSectionContainer");
   let html = document.querySelector("html");
   let navLinks = document.querySelectorAll("nav a");
 
-  gsap.to(html, {
+  let colorChange = gsap.timeline({
     scrollTrigger: {
       start: "top bottom+=38%",
       end: "top bottom-=4%",
@@ -53,27 +61,45 @@ document.addEventListener("DOMContentLoaded", (event) => {
       duration: 20,
       trigger: startWhite,
     },
-    background: "#f9f9f9",
   });
 
-  // gsap.to(navLinks, {
-  //   scrollTrigger: {
-  //     start: "top bottom",
-  //     end: "top bottom-=28%",
-  //     scrub: 0.25,
-  //     duration: 20,
-  //     trigger: startWhite,
-  //   },
-  //   color: "#211E1F",
-  // });
+  colorChange
+    .to(
+      html,
+      {
+        background: "#f9f9f9",
+      },
+      0
+    )
+    .to(
+      title,
+      {
+        color: colors.black,
+      },
+      0
+    )
+    .to(
+      navSwap,
+      {
+        background: colors.white,
+      },
+      0
+    )
+    .to(
+      navText,
+      {
+        color: colors.black,
+      },
+      0
+    )
+    .to(
+      "#headerMark",
+      {
+        color: colors.black,
+      },
+      0
+    );
 
-  let headerQuote = document.querySelectorAll("#quoteHeader > *");
-  // let tagline = document.getElementById("headerTagline");
-  // let para = document.querySelector("#quoteHeader p");
-  let vid = document.querySelector("video");
-  let title = document.querySelector("nav > span, #topBar");
-  vid.volume = 0;
-  let navElements = gsap.utils.toArray("nav a");
   let introAnim = gsap.timeline({
     paused: true,
   });
@@ -218,10 +244,12 @@ for (let i = 0; i < links.length; i++) {
 
   top.split = new SplitText(top, {
     type: "chars",
+    charsClass: "navSplit",
   });
 
   bottom.split = new SplitText(bottom, {
     type: "chars",
+    charsClass: "navSplit",
   });
 
   let tl = gsap.timeline({
@@ -244,7 +272,7 @@ for (let i = 0; i < links.length; i++) {
       y: "0rem",
       rotateX: -90,
       delay: 0.2,
-      color: colors.white,
+      color: colors.lgry,
       duration: 0.25,
       ease: "power3.inOut",
       transformOrigin: "center bottom",

@@ -61,7 +61,7 @@ h1 em,
 
 header {
   position: relative;
-  padding-top: 6%;
+  padding-top: 57px;
   height: 60vh;
   margin-bottom: 5rem;
   display: flex;
@@ -399,7 +399,7 @@ blockquote {
 }
 
 .companySection {
-  margin: 7rem 0;
+  margin: clamp(7rem, calc(7rem + ((1vw - 0.35rem) * 2.3077)), 10rem) 0;
 }
 
 #quoteUpjohn {
@@ -1114,7 +1114,7 @@ blockquote {
 
   header {
     height: 80vh;
-    padding-top: 0;
+    padding-top: 60px;
   }
   header #wordMark {
     bottom: -60px;
@@ -1176,7 +1176,7 @@ blockquote {
   }
 
   #factory {
-    height: 30%;
+    height: 33%;
   }
 
   #birds {
@@ -1189,7 +1189,7 @@ blockquote {
   }
 
   #apple {
-    height: 60%;
+    height: 63%;
   }
 
   #autocam .col:first-child {
@@ -1205,6 +1205,7 @@ blockquote {
     align-self: flex-end;
     height: 70%;
     padding: 0;
+    margin-bottom: 0;
     margin-right: var(--gutter);
   }
 
@@ -1293,6 +1294,7 @@ blockquote {
     height: 40%;
     margin-top: 0;
     padding: 0;
+    flex-grow: 1;
     margin-right: var(--gutter);
   }
 
@@ -1335,6 +1337,7 @@ blockquote {
   #orange {
     width: 60%;
     height: 42%;
+    flex-grow: 1;
     align-self: flex-end;
   }
 
@@ -1345,12 +1348,14 @@ blockquote {
 
   #green {
     padding: 0;
-    height: 42%;
-    margin-bottom: 0;
+    height: 48%;
+    flex-grow: 1;
+    margin-bottom: 0 !important;
   }
 
   #sword {
-    height: 24%;
+    height: 26%;
+    margin-bottom: 0 !important;
   }
 
   #quoteOpera {
@@ -1364,6 +1369,10 @@ blockquote {
 
   #opera .col:not(:last-child) {
     margin-right: var(--gutter);
+  }
+
+  #headingOpera {
+    margin-top: var(--gutter);
   }
 
   #opera .col:last-child {
@@ -1604,7 +1613,7 @@ blockquote {
     margin-bottom: 1rem;
   }
   #visitSectionContainer {
-    margin-top: 36rem;
+    margin-top: 25rem;
   }
 
   #visitInfo .col:nth-child(2) {
