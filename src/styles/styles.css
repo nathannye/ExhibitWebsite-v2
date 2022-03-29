@@ -565,7 +565,7 @@ blockquote {
 #french .col:first-child {
   height: 100%;
   flex-grow: 1;
-  padding-right: calc(var(--gutter) / 2);
+  /* padding-right: calc(var(--gutter) / 2); */
 }
 
 #dog {
@@ -575,19 +575,19 @@ blockquote {
 
 #queen {
   height: 52%;
-  width: 50%;
+  width: calc(var(--widthFour) + var(--gutter));
   margin-top: var(--gutter);
 }
 
 #french .col:nth-child(2) {
   height: 53%;
   flex-grow: 1;
-  padding-left: calc(var(--gutter) / 2);
+  padding-left: var(--gutter);
   margin-right: var(--gutter);
 }
 
 #french .col:nth-child(3) {
-  width: 100%;
+  width: var(--widthFour);
   height: 44%;
   flex-direction: column;
   margin-top: var(--gutter);
@@ -597,6 +597,8 @@ blockquote {
 
 #titleFrench {
   margin-bottom: var(--gutter);
+  display: flex;
+  flex-direction: row;
 }
 
 #titleFrench h1 {
@@ -616,7 +618,7 @@ blockquote {
 }
 
 #quoteFrench {
-  height: 37%;
+  /* height: 37%; */
   padding-left: var(--gutter);
   margin-top: var(--gutter);
 }
