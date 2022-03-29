@@ -585,13 +585,13 @@ blockquote {
   height: 53%;
   flex-grow: 1;
   padding-right: var(--gutter);
-  width: unset;
+  width: var(--widthFour);
   padding-left: var(--gutter);
   /* margin-right: var(--gutter); */
 }
 
 #french .col:nth-child(3) {
-  width: var(--widthFour);
+  width: calc(var(--widthFour) - var(--gutter));
   height: 44%;
   flex-direction: column;
   margin-top: var(--gutter);
@@ -1537,7 +1537,7 @@ blockquote {
   }
 
   #queen {
-    width: calc(var(--widthFour) + var(--gutter));
+    width: var(--widthFour);
     height: 47%;
   }
 
