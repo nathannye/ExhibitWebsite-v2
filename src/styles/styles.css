@@ -1383,6 +1383,7 @@ blockquote {
     padding: 0;
     height: 48%;
     flex-grow: 1;
+    margin-top: var(--gutter);
     margin-bottom: 0 !important;
   }
 
