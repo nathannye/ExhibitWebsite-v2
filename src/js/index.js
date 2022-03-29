@@ -1,6 +1,7 @@
 import { gsap } from "gsap/all";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitText from "gsap/SplitText";
+import Lottie from "lottie-web";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -99,6 +100,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
       },
       0
     );
+
+  var markAnim = Lottie.loadAnimation({
+    container: "#loaderAnimContainer",
+    loop: false,
+    autoplay: false,
+    path: "../loaderMarkAnim.json",
+  });
 
   let introAnim = gsap.timeline({
     paused: true,
