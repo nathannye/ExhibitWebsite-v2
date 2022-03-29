@@ -41,6 +41,15 @@ h1 {
   transform-origin: "center bottom";
 }
 
+.marker {
+  background-color: red;
+  width: 50px;
+  background-size: cover;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 h1 * {
   perspective: 500px;
   backface-visibility: visible;
