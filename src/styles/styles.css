@@ -702,6 +702,7 @@ blockquote {
 #orange {
   margin-left: var(--gutter);
   margin-top: 10px;
+  height: 47%;
 }
 
 #opera .col:first-child {
