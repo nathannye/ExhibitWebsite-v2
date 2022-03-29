@@ -32,7 +32,7 @@ html {
 }
 
 h1 {
-  font-size: clamp(32px, calc(1.5rem + ((1vw - 3.5px) * 3.4862)), 70px);
+  font-size: clamp(32px, calc(1.5rem + ((1vw - 3.5px) * 3.4862)), 64px);
   text-transform: uppercase;
   line-height: 1;
   font-weight: 900;
@@ -417,7 +417,7 @@ blockquote {
   position: absolute;
   writing-mode: vertical-lr;
   text-align: right;
-  top: calc(20% + var(--gutter));
+  top: 40%;
   transform: scale(-1, -1) translateX(47%);
 }
 
@@ -427,16 +427,17 @@ blockquote {
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: flex-start;
   margin-left: var(--gutter);
   padding-right: 6.6%;
-  height: 42%;
+  /* height: 42%; */
 }
 
 #clothespin {
   width: 40%;
   flex-grow: 1;
-  margin-left: calc(var(--gutter) / 2);
+  align-self: flex-end;
+  /* margin-left: calc(var(--gutter) / 2); */
   padding-right: calc(var(--gutter) / 2);
   height: 25%;
 }
@@ -444,7 +445,7 @@ blockquote {
 #yellowDot {
   width: 40%;
   flex-grow: 1;
-  margin-right: calc(var(--gutter) / 2);
+  align-self: flex-end;
   padding-left: calc(var(--gutter) / 2);
   height: 40%;
 }
@@ -453,7 +454,7 @@ blockquote {
   display: flex;
   width: var(--widthSix);
   flex-wrap: wrap;
-  height: 50%;
+  height: 55%;
   margin-left: calc(var(--gutter) + var(--gutter) + var(--widthTwo));
 }
 
@@ -475,23 +476,6 @@ blockquote {
   margin-right: var(--gutter);
   margin-top: var(--gutter);
   height: 20%;
-}
-
-/*
-#arm img {
-  width: var(--widthSix);
-}
-
-#egg img {
-  width: var(--widthFour);
-}
-
-#man img {
-  width: var(--widthTwo);
-} */
-
-.upjohnContainer-2 {
-  display: flex;
 }
 
 #autocam {
@@ -637,7 +621,8 @@ blockquote {
   display: flex;
   height: 50vh;
   flex-wrap: wrap;
-  margin-bottom: calc(10% + 120px);
+  /* Make up for abs position */
+  margin-bottom: calc(7rem + 100px);
   flex-direction: column;
 }
 
@@ -649,6 +634,10 @@ blockquote {
   display: flex;
   flex-direction: column;
   height: 50%;
+}
+
+#opera .col:nth-child(3) {
+  height: 78.5%;
 }
 
 #headingOpera h1:not(:first-of-type) {
@@ -692,7 +681,6 @@ blockquote {
 
 #blue {
   margin-bottom: 0 !important;
-  height: 39vh;
 }
 
 #orange {
@@ -715,7 +703,10 @@ blockquote {
   margin-left: var(--gutter);
   padding-right: var(--gutter);
   width: calc(100vw - var(--gutter));
-  bottom: calc(-34% - var(--gutter));
+  margin-bottom: 0;
+  transform: translateY(100%);
+  /* bottom: calc(-34% - var(--gutter)); */
+  bottom: calc(var(--gutter) * -1);
   left: -50vw;
 }
 
@@ -787,10 +778,12 @@ blockquote {
 
 #corn {
   margin-top: var(--gutter);
+  height: 61%;
 }
 
 #herman .col:last-child {
   width: 100%;
+  height: 56%;
 }
 
 #visitSectionContainer {
@@ -1382,6 +1375,7 @@ blockquote {
     position: relative;
     bottom: unset;
     margin-left: 0;
+    transform: translate(0);
     margin-top: var(--gutter);
     width: var(--widthSix);
     left: unset;
