@@ -563,7 +563,7 @@ blockquote {
 }
 
 #french .col:first-child {
-  height: 50%;
+  height: 100%;
   flex-grow: 1;
   padding-right: calc(var(--gutter) / 2);
 }
@@ -610,14 +610,20 @@ blockquote {
 }
 
 #jerry {
-  height: 30vh;
+  height: 36%;
   margin-left: var(--gutter);
   object-fit: contain;
   margin-bottom: var(--gutter);
 }
 
 #scatter {
-  height: 55%;
+  height: 20%;
+}
+
+#quoteFrench{
+  height: 37%;
+  padding-left: var(--gutter);
+  margin-top: var(--gutter);
 }
 
 #meat {
