@@ -564,26 +564,30 @@ blockquote {
 
 #french .col:first-child {
   height: 100%;
+  width: calc(var(--widthFour) + var(--gutter) + var(--gutter));
   flex-grow: 1;
   /* padding-right: calc(var(--gutter) / 2); */
 }
 
 #dog {
   height: 40%;
-  width: 50%;
+  /* width: 50%; */
 }
 
 #queen {
   height: 52%;
-  width: calc(var(--widthFour) + var(--gutter));
+  padding-right: var(--gutter);
+  /* width: calc(var(--widthFour) + var(--gutter)); */
   margin-top: var(--gutter);
 }
 
 #french .col:nth-child(2) {
   height: 53%;
   flex-grow: 1;
+  padding-right: var(--gutter);
+  width: unset;
   padding-left: var(--gutter);
-  margin-right: var(--gutter);
+  /* margin-right: var(--gutter); */
 }
 
 #french .col:nth-child(3) {
@@ -625,6 +629,7 @@ blockquote {
 
 #meat {
   height: 58%;
+  flex-grow: 1;
 }
 
 #opera {
