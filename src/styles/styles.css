@@ -1116,11 +1116,13 @@ blockquote {
     height: 80vh;
     padding-top: 60px;
   }
+
   header #wordMark {
     bottom: -60px;
     right: -200px;
     top: unset;
   }
+
   header #headerTagline {
     margin-left: calc(8.3% - 0.75rem);
     bottom: -160px;
@@ -1409,6 +1411,7 @@ blockquote {
 
   #sofa {
     margin-left: 0;
+    height: 51% !important;
   }
 
   #herman .col {
@@ -1417,9 +1420,9 @@ blockquote {
     height: 80%;
   }
 
-  /* #herman img {
-    height: 100%;
-  } */
+  #thankyou {
+    height: 42% !important;
+  }
 
   #herman .col:not(:last-child) {
     margin-right: var(--gutter);
