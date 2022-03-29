@@ -1584,10 +1584,19 @@ blockquote {
     justify-content: flex-start;
     order: 0;
     margin-bottom: 0;
-    width: var(--widthOne);
+    width: calc(var(--gutter) + var(--widthOne));
     margin-right: var(--gutter);
     flex-direction: row;
   }
+
+  #behindExhibit h1 {
+    display: flex;
+  }
+
+  #behindExhibit h1.ylw .splitLine:first-child {
+    transform: translateY(-0.304em);
+  }
+
   #behindExhibit #brightformatAbout {
     align-self: flex-start;
     width: 20%;

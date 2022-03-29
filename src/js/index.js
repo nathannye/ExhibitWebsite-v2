@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     )
     .call(function () {
       vid.play();
-    })
+    }, 0)
     .from(
       vid,
       {
