@@ -796,7 +796,7 @@ blockquote {
 
 #herman .col:first-child {
   width: 50%;
-  padding-right: var(--gutter);
+  margin-right: var(--gutter);
   height: 37%;
 }
 
@@ -1473,7 +1473,7 @@ blockquote {
     width: var(--widthTwo);
     align-self: flex-end;
     height: 70%;
-    margin-right: 0;
+    /* margin-right: 0; */
   }
   #herman .col:first-child img {
     height: 100%;
