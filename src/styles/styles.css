@@ -1150,20 +1150,6 @@ blockquote {
     padding-top: 60px;
   }
 
-  header #wordMark {
-    bottom: -60px;
-    right: -200px;
-    top: unset;
-  }
-
-  header #headerTagline {
-    margin-left: calc(8.3% - 0.75rem);
-    bottom: -160px;
-    right: -230px;
-    left: unset;
-    top: unset;
-    transform: translateY(50%);
-  }
   header #headerVideo {
     height: 83%;
   }
@@ -1507,7 +1493,7 @@ blockquote {
   }
 
   #titleFrench {
-    transform: translateX(-0.75rem);
+    /* transform: translateX(-0.75rem); */
   }
 
   #french .col {
@@ -1519,7 +1505,7 @@ blockquote {
     height: 100%;
     padding: 0;
     align-self: flex-start;
-    margin-right: var(--gutter);
+    /* margin-right: var(--gutter); */
     /* flex-grow: unset !important; */
   }
 
@@ -1551,8 +1537,10 @@ blockquote {
   }
 
   #queen {
-    width: var(--widthFour);
+    width: var(--widthSix);
     height: 47%;
+    margin-top: 0 !important;
+    padding-right: 0;
   }
 
   #jerry {

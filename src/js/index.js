@@ -2,12 +2,11 @@ import { gsap } from "gsap/all";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitText from "gsap/SplitText";
 import Lottie from "lottie-web";
+import * as smoothscroll from "smoothscroll-polyfill";
+
+smoothscroll.polyfill();
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
-
-
-
-
 
 const colors = {
   ylw: "#FABC13",
@@ -232,7 +231,7 @@ function setuph1() {
         trigger: e,
         start: "top bottom-=12%",
       },
-      duration: 2,
+      duration: 1.3,
       ease: "power3.inOut",
       // autoAlpha: 0,s
       stagger: 0.26,
