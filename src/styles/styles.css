@@ -1245,11 +1245,10 @@ blockquote {
     position: relative;
     top: unset;
     align-self: center;
-    height: 80%;
+    height: 100%;
     margin-right: var(--gutter);
     transform: translate(0) scale(-1, -1);
     margin-left: calc(var(--widthOne) + var(--gutter));
-    margin-top: 430px;
   }
 
   #upjohn .col {
