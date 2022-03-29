@@ -943,6 +943,10 @@ blockquote {
   align-items: flex-end;
 }
 
+#behindExhibitHeadingContainer br {
+  display: none;
+}
+
 #behindExhibit h1:last-of-type {
   color: var(--darkgry);
 }
@@ -1132,6 +1136,10 @@ blockquote {
     text-transform: uppercase;
     font-weight: 900;
     color: white;
+  }
+
+  #behindExhibitHeadingContainer br {
+    display: block;
   }
 
   nav {
