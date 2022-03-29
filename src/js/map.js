@@ -13,6 +13,8 @@ window.onload = () => {
     style: "mapbox://styles/nye-11/cl0oszoxn000d14teqidfpqqn",
   });
 
+  map.scrollZoom.disable();
+
   // const attr = new mapboxgl.AttributionControl({
   //   customAttribution: "",
   // });
