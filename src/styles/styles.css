@@ -290,12 +290,11 @@ nav a:not(:last-child) {
   height: 100vh;
   position: fixed;
   top: 0;
-  display: none;
   left: 0;
   align-items: center;
   justify-content: center;
   z-index: 400;
-  /* display: flex; */
+  display: flex;
 }
 
 #loaderAnimContainer {

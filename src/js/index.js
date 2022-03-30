@@ -206,9 +206,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   let loaderAnim = gsap.timeline({
     paused: true,
-    onComplete: function () {
-      loaderContainer.style.display = "none";
-    },
   });
 
   loaderAnim
@@ -243,6 +240,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ease: "power3.inOut",
       },
       "<"
+    )
+    .to(
+      "#loaderContainer",
+      {
+        display: "none",
+      },
+      ">"
     )
     .call(function () {
       setTimeout(() => {
