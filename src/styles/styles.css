@@ -29,6 +29,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: clamp(32px, calc(1.5rem + ((1vw - 3.5px) * 3.4862)), 64px);
   text-transform: uppercase;
@@ -88,6 +92,26 @@ header {
 
 #quoteHeader p {
   margin-top: 1rem;
+}
+
+header #headerTagline {
+  width: 110px;
+  color: white;
+  position: absolute;
+  left: 4.5%;
+  z-index: 3;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.4;
+  top: 0;
+  top: 4.65%;
+}
+
+a.scrollLink {
+  position: absolute;
+  top: -130px;
+  left: 0;
+  opacity: 0;
 }
 
 #quoteHeader p {
@@ -425,6 +449,7 @@ blockquote {
 
 #companyContainer {
   margin-bottom: 12rem;
+  position: relative;
 }
 
 /* #companyContainer img {
@@ -584,7 +609,7 @@ blockquote {
   display: flex;
   height: 80vh;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #french .col {
@@ -593,45 +618,46 @@ blockquote {
 }
 
 #french .col:first-child {
-  height: 50%;
+  height: 100%;
+  width: calc(var(--widthFour) + var(--gutter) + var(--gutter));
   flex-grow: 1;
-  padding-right: calc(var(--gutter) / 2);
+  /* padding-right: calc(var(--gutter) / 2); */
 }
 
 #dog {
-  padding-right: calc(var(--gutter) / 2);
-  height: 75%;
+  height: 40%;
+  /* width: 50%; */
 }
 
 #queen {
-  padding-left: calc(var(--gutter) / 2);
+  height: 52%;
+  padding-right: var(--gutter);
+  /* width: calc(var(--widthFour) + var(--gutter)); */
+  margin-top: var(--gutter);
 }
 
 #french .col:nth-child(2) {
   height: 53%;
   flex-grow: 1;
-  padding-left: calc(var(--gutter) / 2);
-  margin-right: var(--gutter);
+  padding-right: var(--gutter);
+  width: var(--widthFour);
+  padding-left: var(--gutter);
+  /* margin-right: var(--gutter); */
 }
 
 #french .col:nth-child(3) {
-  width: 100%;
-  height: 24%;
-  flex-direction: row;
+  width: calc(var(--widthFour) - var(--gutter));
+  height: 44%;
+  flex-direction: column;
+  margin-top: var(--gutter);
   margin-left: var(--gutter);
   /* margin-right: var(--gutter); */
 }
 
-#dog {
-  width: 50%;
-}
-
-#queen {
-  width: 50%;
-}
-
 #titleFrench {
   margin-bottom: var(--gutter);
+  display: flex;
+  flex-direction: row;
 }
 
 #titleFrench h1 {
@@ -640,18 +666,25 @@ blockquote {
 }
 
 #jerry {
-  height: 30vh;
+  height: 36%;
   margin-left: var(--gutter);
   object-fit: contain;
   margin-bottom: var(--gutter);
 }
 
 #scatter {
-  height: 55%;
+  height: 20%;
+}
+
+#quoteFrench {
+  /* height: 37%; */
+  padding-left: var(--gutter);
+  margin-top: var(--gutter);
 }
 
 #meat {
-  height: 58%;
+  height: 47%;
+  flex-grow: 1;
 }
 
 #opera {
@@ -682,7 +715,6 @@ blockquote {
   font-size: clamp(1rem, calc(1rem + ((1vw - 0.35rem) * 2.3077)), 2.5rem);
 }
 
-#opera .col img,
 #quoteOpera,
 #headingOpera {
   margin-bottom: var(--gutter);
@@ -694,7 +726,10 @@ blockquote {
 }
 
 #sword {
-  height: 15vh;
+  height: 21%;
+  margin-bottom: 0;
+  flex-grow: 1;
+  padding-bottom: var(--gutter);
 }
 
 #opera .col:nth-child(2) {
@@ -724,6 +759,8 @@ blockquote {
 #orange {
   margin-left: var(--gutter);
   margin-top: 10px;
+  margin-bottom: var(--gutter);
+  height: 47%;
 }
 
 #opera .col:first-child {
@@ -755,6 +792,7 @@ blockquote {
   flex-wrap: wrap;
   display: flex;
   height: 100vh;
+  min-height: 800px;
 }
 
 #quoteHerman {
@@ -827,6 +865,7 @@ blockquote {
 #visitSectionContainer {
   margin: auto;
   display: flex;
+  position: relative;
   flex-direction: column;
   color: var(--darkgry);
 }
@@ -911,6 +950,7 @@ blockquote {
   display: flex;
   margin-top: 10%;
   flex-wrap: wrap;
+  position: relative;
   width: 100%;
 }
 
@@ -948,6 +988,10 @@ blockquote {
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-end;
+}
+
+#behindExhibitHeadingContainer br {
+  display: none;
 }
 
 #behindExhibit h1:last-of-type {
@@ -1145,6 +1189,10 @@ blockquote {
     color: white;
   }
 
+  #behindExhibitHeadingContainer br {
+    display: block;
+  }
+
   nav {
     justify-content: space-between;
     top: 0;
@@ -1161,20 +1209,6 @@ blockquote {
     padding-top: 60px;
   }
 
-  header #wordMark {
-    bottom: -60px;
-    right: -200px;
-    top: unset;
-  }
-
-  header #headerTagline {
-    margin-left: calc(8.3% - 0.75rem);
-    bottom: -160px;
-    right: -230px;
-    left: unset;
-    top: unset;
-    transform: translateY(50%);
-  }
   header #headerVideo {
     height: 83%;
   }
@@ -1273,11 +1307,10 @@ blockquote {
     position: relative;
     top: unset;
     align-self: center;
-    height: 80%;
+    height: 100%;
     margin-right: var(--gutter);
     transform: translate(0) scale(-1, -1);
     margin-left: calc(var(--widthOne) + var(--gutter));
-    margin-top: 430px;
   }
 
   #upjohn .col {
@@ -1397,6 +1430,7 @@ blockquote {
     padding: 0;
     height: 48%;
     flex-grow: 1;
+    margin-top: var(--gutter);
     margin-bottom: 0 !important;
   }
 
@@ -1440,7 +1474,7 @@ blockquote {
   /* Herman Desktop Styles */
   #herman {
     height: 100vh;
-    min-height: 800px;
+    /* min-height: 800px; */
   }
 
   #fish,
@@ -1452,7 +1486,7 @@ blockquote {
 
   #corn {
     margin-bottom: 0 !important;
-    height: 72%;
+    /* height: 72%; */
   }
 
   #sofa {
@@ -1485,7 +1519,8 @@ blockquote {
     width: var(--widthTwo);
     align-self: flex-end;
     height: 70%;
-    margin-right: 0;
+    padding: 0 !important;
+    /* margin-right: 0; */
   }
   #herman .col:first-child img {
     height: 100%;
@@ -1501,6 +1536,7 @@ blockquote {
   #herman .col:last-child {
     width: var(--widthFour);
     align-self: flex-end;
+    height: 84%;
   }
 
   #fish {
@@ -1519,7 +1555,7 @@ blockquote {
   }
 
   #titleFrench {
-    transform: translateX(-0.75rem);
+    /* transform: translateX(-0.75rem); */
   }
 
   #french .col {
@@ -1531,7 +1567,7 @@ blockquote {
     height: 100%;
     padding: 0;
     align-self: flex-start;
-    margin-right: var(--gutter);
+    /* margin-right: var(--gutter); */
     /* flex-grow: unset !important; */
   }
 
@@ -1563,9 +1599,10 @@ blockquote {
   }
 
   #queen {
-    padding-left: 0;
-    width: calc(var(--widthFour) + var(--gutter));
+    width: var(--widthSix);
     height: 47%;
+    margin-top: 0 !important;
+    padding-right: 0;
   }
 
   #jerry {
@@ -1609,10 +1646,19 @@ blockquote {
     justify-content: flex-start;
     order: 0;
     margin-bottom: 0;
-    width: var(--widthOne);
+    width: calc(var(--gutter) + var(--widthOne));
     margin-right: var(--gutter);
     flex-direction: row;
   }
+
+  #behindExhibit h1 {
+    display: flex;
+  }
+
+  #behindExhibit h1.ylw .splitLine:first-child {
+    transform: translateY(-0.304em);
+  }
+
   #behindExhibit #brightformatAbout {
     align-self: flex-start;
     width: 20%;

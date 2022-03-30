@@ -13,19 +13,7 @@ window.onload = () => {
     style: "mapbox://styles/nye-11/cl0oszoxn000d14teqidfpqqn",
   });
 
-  // const attr = new mapboxgl.AttributionControl({
-  //   customAttribution: "",
-  // });
-
-  // const nav = new mapboxgl.NavigationControl({
-  //   anchor: "bottom-right",
-  //   showCompass: false,
-  // });
-
-  // map
-  //   .addControl(nav, "bottom-right")
-  //   .setLngLat([-85.47859669797005, 43.68930899669416]);
-  // // .addTo(map);
+  map.scrollZoom.disable();
 };
 
 // const marker = new mapboxgl.Marker()

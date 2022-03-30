@@ -2,7 +2,6 @@ import { gsap } from "gsap/all";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitText from "gsap/SplitText";
 import Lottie from "lottie-web";
-
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const colors = {
@@ -56,10 +55,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   let colorChange = gsap.timeline({
     scrollTrigger: {
-      start: "top bottom+=38%",
-      end: "top bottom-=4%",
+      start: "top bottom-=10%",
+      end: "top bottom-=37%",
       scrub: 0.25,
       duration: 20,
+
       trigger: startWhite,
     },
   });
@@ -74,6 +74,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     )
     .to(
       title,
+      {
+        color: colors.black,
+      },
+      0
+    )
+    .to(
+      "#quoteFrench",
       {
         color: colors.black,
       },
@@ -130,7 +137,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     )
     .call(function () {
       vid.play();
-    })
+    }, 0)
     .from(
       vid,
       {
@@ -266,7 +273,7 @@ function setuph1() {
         trigger: e,
         start: "top bottom-=12%",
       },
-      duration: 2,
+      duration: 1.3,
       ease: "power3.inOut",
       // autoAlpha: 0,s
       stagger: 0.26,
