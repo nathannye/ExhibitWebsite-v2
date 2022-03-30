@@ -13,20 +13,10 @@ window.onload = () => {
     style: "mapbox://styles/nye-11/cl0oszoxn000d14teqidfpqqn",
   });
 
+  const marker = new mapboxgl.Marker();
+  marker.setLngLat([-85.47859669797005, 43.68930899669416]);
+  marker.addTo(map);
+  // marker.color("#FABC13");
+
   map.scrollZoom.disable();
 };
-
-// const marker = new mapboxgl.Marker()
-//   .setLngLat([-85.47859669797005, 43.68930899669416])
-//   .addTo(map);
-
-// const marker = new mapboxgl.Marker({
-//   color: "red",
-//   draggable: false,
-// })
-//   .setLngLat([-85.47859669797005, 43.68930899669416])
-//   .addTo(map);
-// const marker = new mapboxgl.Marker({
-//   color: colors.ylw,
-//   anchor: "center",
-// });
