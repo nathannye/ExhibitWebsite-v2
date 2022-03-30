@@ -241,6 +241,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
       },
       "<"
     )
+    .to(
+      loaderContainer,
+      {
+        display: "none",
+      },
+      ">"
+    )
     .call(function () {
       setTimeout(() => {
         introAnim.play();
