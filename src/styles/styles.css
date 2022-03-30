@@ -90,19 +90,6 @@ header {
   margin-top: 1rem;
 }
 
-header #headerTagline {
-  width: 110px;
-  color: white;
-  position: absolute;
-  left: 4.5%;
-  z-index: 3;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 1.4;
-  top: 0;
-  top: 4.65%;
-}
-
 #quoteHeader p {
   color: white;
   font-size: clamp(
@@ -273,17 +260,60 @@ nav a:not(:last-child) {
   margin-right: 3rem;
 }
 
-#loaderCover {
+#loaderContainer {
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
   align-items: center;
   justify-content: center;
-  background: white;
   z-index: 400;
+  display: flex;
+}
+
+#loaderAnimContainer {
+  width: var(--widthSix);
+  margin-right: var(--gutter);
+  z-index: 500;
+}
+
+.loadCover {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 520;
+  width: 100%;
+}
+
+#tagline {
+  color: white;
+  z-index: 405;
+  align-self: flex-end;
+  transform: translateX(-1.5rem);
+  margin-bottom: calc(var(--gutter) * 4);
+}
+
+#tagline h2 {
+  font-size: clamp(
+    1.14rem,
+    calc(1.14rem + ((1vw - 0.35rem) * 0.4308)),
+    1.42rem
+  );
+  font-weight: 900;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+.loadCover {
+  z-index: 405;
+  background: var(--deepBlack);
+}
+
+.loadCover.ylw {
+  background: var(--ylw);
+  z-index: 399;
 }
 
 footer {
@@ -1069,6 +1099,10 @@ blockquote {
 @media only screen and (min-width: 660px) {
   .companyDescription {
     max-width: 330px;
+  }
+
+  #loaderAnimContainer {
+    width: var(--widthTwo);
   }
 
   nav > span {

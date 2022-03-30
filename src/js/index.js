@@ -101,20 +101,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
       0
     );
 
-  var markAnim = Lottie.loadAnimation({
-    container: "#loaderAnimContainer",
-    loop: false,
-    autoplay: false,
-    path: "../loaderMarkAnim.json",
-  });
-
   let introAnim = gsap.timeline({
     paused: true,
   });
-  // tagline.split = new SplitText(tagline, {
-  //   type: "lines, words",
-  //   linesClass: "splitLine",
-  // });
+
+  let tagline = document.querySelector("#tagline h2");
+
+  tagline.split = new SplitText(tagline, {
+    type: "lines, words",
+    linesClass: "splitLine",
+  });
 
   gsap.set(vid, {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
@@ -140,7 +136,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       {
         clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0 100%)",
         ease: "power4.inOut",
-        duration: 1.34,
+        duration: 1,
       },
       0
     )
@@ -175,28 +171,78 @@ document.addEventListener("DOMContentLoaded", (event) => {
       0
     );
 
-  let cover = document.getElementById("loaderCover");
+  let covers = gsap.utils.toArray(".loadCover");
+  let loaderContainer = document.getElementById("loaderAnimContainer");
 
-  gsap.set(cover, {
-    clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+  gsap.set(loaderContainer, {
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
   });
 
-  let loaderAnim = gsap.timeline({});
+  var markAnim = Lottie.loadAnimation({
+    container: loaderContainer,
+    loop: false,
+    autoplay: false,
+    path: "https://assets9.lottiefiles.com/packages/lf20_bvjxvbwu.json",
+  });
+
+  let taglinetl = gsap.timeline({
+    paused: true,
+  });
+
+  taglinetl.from(tagline.split.words, {
+    stagger: 0.066,
+    duration: 1.5,
+    ease: "power3.inOut",
+    yPercent: 100,
+    delay: 0.9,
+  });
+
+  let loaderAnim = gsap.timeline({
+    paused: true,
+  });
 
   loaderAnim
-    .from(
-      cover,
-      {
-        delay: 1,
-        duration: 1,
-        autoAlpha: 0,
-        ease: "power3.inOut",
+    .call(
+      function () {
+        markAnim.play();
+        taglinetl.play();
       },
-      0
+      null,
+      "start"
     )
     .call(function () {
-      introAnim.play();
-    }, 0);
+      setTimeout(() => {
+        taglinetl.timeScale(1.4).reverse();
+      }, 3400);
+    })
+    .to(covers, {
+      scaleY: 0,
+      transformOrigin: "center top",
+      stagger: 0.3,
+      duration: 0.9,
+      delay: 3.9,
+      ease: "power3.inOut",
+    })
+    .to(
+      loaderContainer,
+      {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+        duration: 0.9,
+        // delay: 0.3,
+        transformOrigin: "center top",
+        ease: "power3.inOut",
+      },
+      "<"
+    )
+    .call(function () {
+      setTimeout(() => {
+        introAnim.play();
+      }, 250);
+    });
+
+  markAnim.addEventListener("DOMLoaded", (event) => {
+    loaderAnim.play();
+  });
 });
 
 let h1 = gsap.utils.toArray(
