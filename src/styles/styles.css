@@ -286,6 +286,7 @@ nav a:not(:last-child) {
 
 #loaderContainer {
   width: 100vw;
+  padding-bottom: calc(var(--gutter) * 4);
   height: 100vh;
   position: fixed;
   top: 0;
