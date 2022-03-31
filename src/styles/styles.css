@@ -965,7 +965,6 @@ blockquote {
   flex-wrap: wrap;
   position: relative;
   width: 100%;
-  margin-bottom: 8rem;
 }
 
 #galleryName {
@@ -1631,7 +1630,6 @@ blockquote {
     align-self: center;
     flex-grow: 1;
     width: 100%;
-    /* object-fit: cover; */
   }
 
   #meat {
