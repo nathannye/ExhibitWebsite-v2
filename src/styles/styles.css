@@ -348,6 +348,10 @@ footer {
   color: var(--darkgry);
 }
 
+footer #fsuLink {
+  border: none;
+}
+
 footer::before {
   content: "";
   background: var(--lightgry);
@@ -1046,7 +1050,8 @@ blockquote {
 
 #behindExhibit #archivesAbout img {
   width: 30%;
-  max-width: 140px;
+  min-width: 95px;
+  max-width: 120px;
   margin-bottom: 1rem;
 }
 
