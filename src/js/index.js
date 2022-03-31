@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         clipPath: "polygon(0% 20%, 100% 20%, 100% 100%, 0% 100%)",
         yPercent: 10,
         // transformOrigin: "center bottom",
-        duration: 1.2,
+        duration: 1.9,
         ease: "power3.inOut",
       },
       0
