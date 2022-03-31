@@ -344,7 +344,11 @@ nav a:not(:last-child) {
 footer {
   position: relative;
   margin: 8rem var(--gutter) 6.5rem var(--gutter);
-  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   color: var(--darkgry);
 }
 
@@ -561,7 +565,6 @@ blockquote {
   width: var(--widthFour);
   height: 40vh;
   padding-right: calc(var(--gutter) / 2);
-  margin-left: var(--gutter);
 }
 
 #autocam .col:nth-child(2) {
@@ -591,6 +594,7 @@ blockquote {
 
 #notebook {
   height: 25vh;
+  margin-left: calc(var(--gutter) * 3);
   margin-bottom: var(--gutter);
 }
 
@@ -600,7 +604,7 @@ blockquote {
 
 #birds {
   height: 29vh;
-  margin-top: var(--gutter);
+
   margin-bottom: var(--gutter);
 }
 
@@ -1237,7 +1241,7 @@ blockquote {
   #autocam {
     height: 130vh;
     min-height: 860px;
-    margin-left: var(--widthOne);
+    /* margin-left: var(--widthOne); */
   }
 
   #autocam .col {
@@ -1713,8 +1717,8 @@ blockquote {
     align-self: center;
   }
   #behindExhibit #archivesAbout img {
-    width: 30%;
-    max-width: 140px;
+    width: 50%;
+    max-width: 190px;
     margin-bottom: 1rem;
   }
   #visitSectionContainer {

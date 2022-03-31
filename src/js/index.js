@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let navElements = gsap.utils.toArray("nav a");
   let startWhite = document.getElementById("visitSectionContainer");
   let html = document.querySelector("html");
+  let cont = document.querySelectorAll("body, html");
   let navLinks = document.querySelectorAll("nav a");
 
   let colorChange = gsap.timeline({
@@ -119,6 +120,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     linesClass: "splitLine",
   });
 
+  gsap.set(cont, {
+    overflow: "hidden",
+  });
+
   gsap.set(vid, {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
   });
@@ -163,6 +168,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
         autoAlpha: 0,
         duration: 0.55,
         yPercent: -35,
+      },
+      0
+    )
+    .to(
+      cont,
+      {
+        overflow: "visible",
+        delay: 0.2,
       },
       0
     )
