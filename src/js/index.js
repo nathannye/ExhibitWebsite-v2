@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let navElements = gsap.utils.toArray("nav a");
   let startWhite = document.getElementById("visitSectionContainer");
   let html = document.querySelector("html");
+  let cont = document.querySelectorAll("body, html");
   let navLinks = document.querySelectorAll("nav a");
 
   let colorChange = gsap.timeline({
@@ -119,6 +120,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     linesClass: "splitLine",
   });
 
+  gsap.set(cont, {
+    overflow: "hidden",
+  });
+
   gsap.set(vid, {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
   });
@@ -142,8 +147,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       vid,
       {
         clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0 100%)",
-        ease: "power4.inOut",
-        duration: 1,
+        ease: "power3.inOut",
+        duration: 1.3,
       },
       0
     )
@@ -153,7 +158,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         y: -10,
         autoAlpha: 0,
         ease: "power3.inOut",
-        duration: 0.5,
+        duration: 0.54,
       },
       0
     )
@@ -161,8 +166,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
       "#headerMark",
       {
         autoAlpha: 0,
-        duration: 0.45,
+        duration: 0.55,
         yPercent: -35,
+      },
+      0
+    )
+    .to(
+      cont,
+      {
+        overflow: "visible",
+        delay: 0.2,
       },
       0
     )
@@ -172,7 +185,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         autoAlpha: 0,
         yPercent: 15,
         ease: "power3.inOut",
-        duration: 0.9,
+        duration: 1,
         duration: 1,
       },
       0
@@ -191,6 +204,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     autoplay: false,
     path: "https://assets9.lottiefiles.com/packages/lf20_bvjxvbwu.json",
   });
+
+  markAnim.setSpeed(0.75);
 
   let taglinetl = gsap.timeline({
     paused: true,
@@ -220,21 +235,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     .call(function () {
       setTimeout(() => {
         taglinetl.timeScale(1.4).reverse();
-      }, 3400);
+      }, 3900);
     })
     .to(covers, {
       scaleY: 0,
       transformOrigin: "center top",
       stagger: 0.3,
-      duration: 0.9,
-      delay: 3.9,
+      duration: 1.2,
+      delay: 4.2,
       ease: "power3.inOut",
     })
     .to(
       loaderContainer,
       {
         clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-        duration: 0.9,
+        duration: 1.2,
         // delay: 0.3,
         transformOrigin: "center top",
         ease: "power3.inOut",
@@ -280,10 +295,10 @@ function setuph1() {
         trigger: e,
         start: "top bottom-=12%",
       },
-      duration: 1.3,
+      duration: 1.95,
       ease: "power3.inOut",
       // autoAlpha: 0,s
-      stagger: 0.26,
+      stagger: 0.12,
       rotateX: 40,
       yPercent: 100,
     });
@@ -327,7 +342,7 @@ for (let i = 0; i < links.length; i++) {
     {
       y: "-1rem",
       rotateX: 90,
-      duration: 0.25,
+      duration: 0.35,
       ease: "power3.inOut",
       transformOrigin: "center bottom",
     },
@@ -339,7 +354,7 @@ for (let i = 0; i < links.length; i++) {
       rotateX: -90,
       delay: 0.2,
       color: colors.lgry,
-      duration: 0.25,
+      duration: 0.35,
       ease: "power3.inOut",
       transformOrigin: "center bottom",
     },
@@ -382,7 +397,7 @@ btn.tl
     btn,
     {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      duration: 0.3,
+      duration: 0.5,
       ease: "power3.inOut",
     },
     0
@@ -391,7 +406,7 @@ btn.tl
     btn.split.chars,
     {
       yPercent: 100,
-      duration: 0.3,
+      duration: 0.5,
       // stagger: 0.01,
       ease: "power3.inOut",
     },
