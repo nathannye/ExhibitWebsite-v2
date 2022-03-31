@@ -367,7 +367,7 @@ footer::before {
 
 footer img {
   width: 200px;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   opacity: 0.46;
 }
 
@@ -375,10 +375,15 @@ footer br {
   margin-bottom: 0.25rem;
 }
 
+#fsuLink {
+  display: block;
+}
+
 footer p {
   /* width: 100%; */
+  line-height: 1.4;
   font-size: 0.85rem;
-  max-width: 500px;
+  max-width: 420px;
 }
 
 footer a {
@@ -960,6 +965,7 @@ blockquote {
   flex-wrap: wrap;
   position: relative;
   width: 100%;
+  margin-bottom: 8rem;
 }
 
 #galleryName {
@@ -1152,6 +1158,10 @@ blockquote {
 @media only screen and (min-width: 660px) {
   .companyDescription {
     max-width: 330px;
+  }
+
+  footer > p {
+    margin-top: 0;
   }
 
   #loaderAnimContainer {
@@ -1631,6 +1641,8 @@ blockquote {
 
   #scatter {
     height: 33%;
+    /* width: var(--widthSix); */
+    margin-left: calc(var(--gutter) + var(--widthOne));
   }
 
   #dog {
@@ -1647,6 +1659,7 @@ blockquote {
     width: var(--widthSix);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
     /* margin-left: calc(var(--gutter) + var(--widthOne));
     margin-right: calc(var(--gutter) + var(--widthOne)); */
   }
