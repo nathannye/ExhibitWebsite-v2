@@ -672,7 +672,7 @@ blockquote {
 
 #jerry {
   height: 36%;
-  margin-left: var(--gutter);
+  /* margin-left: var(--gutter); */
   object-fit: contain;
   margin-bottom: var(--gutter);
 }
@@ -1613,9 +1613,12 @@ blockquote {
 
   #jerry {
     height: 44%;
+    padding-top: 30%;
     margin: 0 0 var(--gutter) 0;
-    align-self: flex-end;
-    width: var(--widthFive);
+    align-self: center;
+    flex-grow: 1;
+    width: 100%;
+    /* object-fit: cover; */
   }
 
   #meat {
