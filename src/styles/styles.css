@@ -909,7 +909,6 @@ blockquote {
   width: 100%;
 }
 
-
 #visitHeading {
   margin-bottom: var(--gutter);
 }
@@ -1525,9 +1524,6 @@ blockquote {
     min-height: 640px;
   }
 
-  #titleFrench {
-  }
-
   #french .col {
     flex-grow: 1;
   }
@@ -1535,7 +1531,9 @@ blockquote {
   #french .col:first-child {
     width: var(--widthThree);
     height: 100%;
+    position: relative;
     padding: 0;
+    justify-content: flex-end;
     align-self: flex-start;
   }
 
@@ -1575,8 +1573,12 @@ blockquote {
     padding-top: 30%;
     margin: 0 0 var(--gutter) 0;
     align-self: center;
+    transform: translateX(-18%) scale(1.6) !important;
+    position: absolute;
+    top: -10vh;
+    left: 0;
     flex-grow: 1;
-    width: 100%;
+    width: calc(100% - (var(--gutter) * 2));
   }
 
   #meat {
@@ -1605,8 +1607,6 @@ blockquote {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-    /* margin-left: calc(var(--gutter) + var(--widthOne));
-    margin-right: calc(var(--gutter) + var(--widthOne)); */
   }
 
   #behindExhibit #behindExhibitHeadingContainer {
