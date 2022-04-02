@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   gsap.set(cont, {
-    overflow: "hidden",
+    overflowY: "hidden",
   });
 
   gsap.set(vid, {
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     .to(
       cont,
       {
-        overflow: "visible",
+        overflowY: "visible",
         delay: 0.2,
       },
       0

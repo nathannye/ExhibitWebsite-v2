@@ -556,6 +556,7 @@ blockquote {
 
 #autocam {
   display: flex;
+  height: 110vh;
   max-height: 1400px;
   flex-direction: row;
   flex-wrap: wrap;
@@ -569,14 +570,15 @@ blockquote {
 #autocam .col:first-child {
   /* width: 50%; */
   width: var(--widthFour);
-  height: 40vh;
+  height: 41%;
   padding-right: calc(var(--gutter) / 2);
 }
 
 #autocam .col:nth-child(2) {
   width: var(--widthFour);
   padding-top: var(--unit);
-  height: 40vh;
+  height: 36%;
+  align-self: flex-end;
   padding-left: calc(var(--gutter) / 2);
   margin-right: var(--gutter);
 }
@@ -590,27 +592,26 @@ blockquote {
 }
 
 #factory {
-  height: 11vh;
+  height: 34%;
   margin-bottom: var(--gutter);
 }
 
 #copper {
-  height: 13vh;
+  height: 31%;
 }
 
 #notebook {
-  height: 25vh;
+  height: 64%;
   margin-left: calc(var(--gutter) * 3);
   margin-bottom: var(--gutter);
 }
 
 #apple {
-  height: 22vh;
+  height: 63%;
 }
 
 #birds {
-  height: 29vh;
-
+  height: 29%;
   margin-bottom: var(--gutter);
 }
 
