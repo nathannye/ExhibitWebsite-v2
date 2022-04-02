@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     container: loaderContainer,
     loop: false,
     autoplay: false,
-    path: "https://assets9.lottiefiles.com/packages/lf20_bvjxvbwu.json",
+    path: "https://assets8.lottiefiles.com/packages/lf20_swh0vpqd.json",
   });
 
   markAnim.setSpeed(0.75);
@@ -211,12 +211,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
     paused: true,
   });
 
-  taglinetl.from(tagline.split.words, {
-    stagger: 0.066,
-    duration: 1.5,
-    ease: "power3.inOut",
+  gsap.set(tagline.split.words, {
     yPercent: 100,
-    delay: 0.9,
+  });
+
+  taglinetl.to(tagline.split.words, {
+    stagger: 0.066,
+    duration: 1.4,
+    ease: "power3.inOut",
+    yPercent: 0,
+    delay: 0.75,
   });
 
   let loaderAnim = gsap.timeline({
@@ -235,27 +239,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
     .call(function () {
       setTimeout(() => {
         taglinetl.timeScale(1.4).reverse();
-      }, 3900);
+        markAnim.setDirection(-1);
+        markAnim.setSpeed(1.1);
+        markAnim.play();
+      }, 3500);
     })
     .to(covers, {
       scaleY: 0,
       transformOrigin: "center top",
       stagger: 0.3,
       duration: 1.2,
-      delay: 4.2,
+      delay: 3.9,
       ease: "power3.inOut",
     })
-    .to(
-      loaderContainer,
-      {
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-        duration: 1.2,
-        // delay: 0.3,
-        transformOrigin: "center top",
-        ease: "power3.inOut",
-      },
-      "<"
-    )
     .to(
       "#loaderContainer",
       {
