@@ -453,6 +453,7 @@ blockquote {
 
 #upjohn {
   height: 100vh;
+  max-height: 1400px;
   position: relative;
 }
 
@@ -555,6 +556,7 @@ blockquote {
 
 #autocam {
   display: flex;
+  max-height: 1400px;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -622,6 +624,7 @@ blockquote {
   display: flex;
   height: 80vh;
   flex-wrap: wrap;
+  max-height: 1400px;
   flex-direction: column;
 }
 
@@ -696,6 +699,7 @@ blockquote {
 #opera {
   display: flex;
   height: 50vh;
+  max-height: 1100px;
   min-height: 440px;
   flex-wrap: wrap;
   /* Make up for abs position */
@@ -796,6 +800,7 @@ blockquote {
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
+  max-height: 1100px;
   height: 100vh;
   min-height: 800px;
 }
