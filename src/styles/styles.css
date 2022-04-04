@@ -1129,6 +1129,11 @@ blockquote {
     max-width: 330px;
   }
 
+  #visitSectionContainer > div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   footer > p {
     margin-top: 0;
   }
@@ -1725,8 +1730,9 @@ blockquote {
   }
 
   footer {
-    margin: 0 calc(var(--widthOne) + var(--gutter)) 3rem
-      calc(var(--widthOne) + var(--gutter));
-    width: unset;
+    /* margin: 0 calc(var(--widthOne) + var(--gutter)) 3rem
+      calc(var(--widthOne) + var(--gutter)); */
+    margin: 0 auto var(--gutter) auto;
+    width: var(--widthSix);
   }
 }
