@@ -387,7 +387,7 @@ footer p {
 }
 
 footer a {
-  border-bottom: 1px solid var(--deepBlack);
+  border-bottom: 1px solid var(--darkgry);
   color: var(--darkgry);
   text-decoration: none;
 }
@@ -1662,7 +1662,6 @@ blockquote {
   }
   #behindExhibit #ferrisAbout > div img {
     width: 100%;
-    margin-bottom: 0.5rem;
   }
   #behindExhibit h1 {
     writing-mode: vertical-rl;
