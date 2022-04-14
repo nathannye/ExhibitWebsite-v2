@@ -1018,7 +1018,7 @@ blockquote {
 #behindExhibit #ferrisAbout {
   width: 100%;
   flex-grow: 1;
-  margin-bottom: 15%;
+  margin-bottom: 4rem;
 }
 
 #behindExhibit #ferrisAbout > div {
@@ -1642,8 +1642,9 @@ blockquote {
 
   #behindExhibit #brightformatAbout {
     align-self: flex-start;
-    width: 20%;
+    width: calc(var(--widthOne) + var(--gutter));
     flex-grow: 1;
+    min-width: 200px;
     max-width: 375px;
   }
 
@@ -1654,6 +1655,7 @@ blockquote {
   #behindExhibit #ferrisAbout {
     width: var(--widthTwo);
     margin-right: var(--gutter);
+    margin-bottom: 10rem;
     flex-grow: 1;
     max-width: 375px;
   }
@@ -1731,7 +1733,7 @@ blockquote {
   footer {
     /* margin: 0 calc(var(--widthOne) + var(--gutter)) 3rem
       calc(var(--widthOne) + var(--gutter)); */
-    margin: 0 auto var(--gutter) auto;
+    margin: 4rem auto var(--gutter) auto;
     width: var(--widthSix);
   }
 }
